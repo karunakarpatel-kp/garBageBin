@@ -23,24 +23,24 @@ export function CustomMetaData(props: any) {
       google: process.env.GOOGLE_ANALYTICS_TAG,
     },
     category: filteredOBJ[0].category,
-    keywords: ["Karunakar Patel", "karunakarpatel", "coding", "nextjs"],
-    creator: "Karunakar Patel",
+    keywords: ["aBOMMA", "iBOMMA", "iBOMMA MOVIES", "BAPPAM"],
+    creator: "iBOMMA",
     openGraph: {
       title: filteredOBJ[0].title,
       description: filteredOBJ[0].description,
       type: "article",
       publishedTime: filteredOBJ[0].publishedTime,
       modifiedTime: filteredOBJ[0].lastUpdateTime,
-      authors: ["Karunakar Patel"],
+      authors: ["iBOMMA"],
       images: [filteredOBJ[0].ogImageURL],
     },
 
-    twitter: {
-      card: "summary_large_image",
-      site: "https://twitter.com/Karna_Patel_",
-      creator: "@Karna_Patel_",
-      creatorId: "https://twitter.com/Karna_Patel_",
-    },
+    // twitter: {
+    //   card: "summary_large_image",
+    //   site: "https://twitter.com/Karna_Patel_",
+    //   creator: "@Karna_Patel_",
+    //   creatorId: "https://twitter.com/Karna_Patel_",
+    // },
 
     robots: {
       index: true,

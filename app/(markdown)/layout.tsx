@@ -3,7 +3,6 @@ import { MdLightMode } from "react-icons/md";
 import { FaArrowCircleUp } from "react-icons/fa";
 import Link from "next/link";
 import TypedAnimation from "Components/Animations/TypedAnimation";
-import Sharing from "../../../Components/SocialShare/Sharing";
 import RecentBlogPost from "Components/RecentBlogPost/RecentBlogPost";
 import Sidebar from "Components/Sidebar/Sidebar";
 import Article from "Components/Article/Article";

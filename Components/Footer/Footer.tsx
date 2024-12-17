@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Desktop */}
         <div className="Left border-0 border-white col-span-1 invisible">Left</div>
         <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white flex items-center font-semibold text-base justify-center md:justify-start">
-          Karunakar Patel @All Rights Reserved
+          aBOMMA All Rights Reserved
         </div>
         <div className="privacyLinks border-0 border-red-800 col-span-4">
           <ul className="list-none flex flex-wrap px-3 md:space-x-5 text-white justify-evenly md:justify-center md:flex-wrap mt-3">

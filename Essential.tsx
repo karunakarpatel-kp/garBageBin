@@ -1,6 +1,5 @@
-import seoImage from "/public/seo.jpg";
-import nextjsInstallImage from "/public/nextjs_install.png";
-import welcomePatelsImage from "/public/welcome-page.png";
+import welcomePatelsImage from "./public/iBOMMA.jpg";
+import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -63,8 +62,8 @@ interface Blog_Post_URL_Props {
   DISCLAIMER_PAGE_ABSOLUTE: string;
   DISCLAIMER_PAGE_RELATIVE: string;
 
-  NEXTJS_INSTALLATION_RELATIVE: string;
-  NEXTJS_INSTALLATION_ABSOLUTE: string;
+  PUSHPA_2_ABSOLUTE: string;
+  PUSHPA_2_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -83,8 +82,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_installation`,
-  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
+  PUSHPA_2_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule`,
+  PUSHPA_2_RELATIVE: "/pushpa-2-the-rule",
 };
 
 interface blogPostsObjProps {
@@ -124,13 +123,13 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   HOME_PAGE: {
     absoluteURL: blogPostURLS.HOME_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
-    title: "Karunakar Patel: Navigating the landscape of programming knowledge",
+    title: "iBOMMA- Latest News, Movie Updates & Upcoming Releases",
     description:
-      "Explore programming with Karunakar Patel. Find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming",
+      "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     changeFrequency: "daily",
     tags: [{ tag: "HomePage", href: "/" }],
@@ -139,13 +138,13 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   BLOG_PAGE: {
     absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
-    title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
+    title: "iBOMMA- Latest News, Movie Updates & Upcoming Releases",
     description:
-      "Welcome to Karunakar Patels Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
+      "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-10-20T19:19:55+00:00",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     changeFrequency: "daily",
     tags: [{ tag: "Blog", href: "/Blog" }],
@@ -154,13 +153,13 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   POLICY_PAGE: {
     absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.PRIVACY_PAGE_RELATIVE,
-    title: "Privacy Policy | KarunakarPatel Blog",
+    title: "Privacy Policy | iBOMMA",
     description:
-      "Welcome to KarunakarPatel privacy policy. In here you can find all the details about privacy policy of Karunakar Patel",
+      "Welcome to iBOMMA privacy policy. In here you can find all the details about privacy policy of iBOMMA website",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     changeFrequency: "daily",
     tags: [{ tag: "Privacy", href: "/privacy" }],
@@ -169,13 +168,13 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   CONTACT_PAGE: {
     absoluteURL: blogPostURLS.CONTACT_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.CONTACT_PAGE_RELATIVE,
-    title: "Contact Us | KarunakarPatel",
+    title: "Contact Us | iBOMMA",
     description:
-      "Welcome to KarunakarPatel contact page. In here you can find all the details of about KarunakarPatel contact information and a way to contact administrator of the KarunakarPatel site.",
+      "Welcome to iBOMMA contact page. In here you can find all the details of about iBOMMA contact information and a way to contact administrator of the iBOMMA site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     changeFrequency: "daily",
     tags: [{ tag: "contact", href: "/contact" }],
@@ -184,74 +183,50 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   DISCLAIMER_PAGE: {
     absoluteURL: blogPostURLS.DISCLAIMER_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.DISCLAIMER_PAGE_RELATIVE,
-    title: "Disclaimer | KarunakarPatel",
+    title: "Disclaimer | iBOMMA",
     description:
-      "Welcome to KarunakarPatel disclaimer page. In here you can find all the details of about KarunakarPatel's Disclaimer and its policies.",
+      "Welcome to iBOMMA disclaimer page. In here you can find all the details of about iBOMMA's Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     changeFrequency: "daily",
     tags: [{ tag: "disclaimer", href: "/disclaimer" }],
   },
 
-  // nextjs_installation
-  NEXTJS_INSTALLATION: {
-    absoluteURL: blogPostURLS.NEXTJS_INSTALLATION_ABSOLUTE,
-    relativeURL: blogPostURLS.NEXTJS_INSTALLATION_RELATIVE,
-    title: "Next.js Installation: Everything You Started",
+  // Pushpa 2 - The Rule
+  PUSHPA_2_THE_RULE: {
+    absoluteURL: blogPostURLS.PUSHPA_2_ABSOLUTE,
+    relativeURL: blogPostURLS.PUSHPA_2_RELATIVE,
+    title: "Pushpa 2 - The Rule Telugu Movie - iBOMMA.",
     description:
-      "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+      " Check the latest review about the recently released telugu movie Pushpa 2 - The Rule in iBOMMA. You can watch the trailers, give reviews or even you can watch and download the movie at excellent quality.",
+    publishedTime: "2024-12-17T19:07:55+00:00",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
-      { tag: "Next.js Install", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
-      { tag: "Next.js", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Pushpa 2 The Rule", href: `${blogPostURLS.PUSHPA_2_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Pushpa 2", href: `${blogPostURLS.PUSHPA_2_RELATIVE}` },
+      { tag: "Pushpa 2 Review", href: `${blogPostURLS.PUSHPA_2_RELATIVE}` },
     ],
-    featuredImage: nextjsInstallImage,
-    featuredImageAltText: "a-person-with-computer",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/nextjs_install.png`,
+    featuredImage: pushpa2TheRule,
+    featuredImageAltText: "pushpa-2-the-rule",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule.png`,
   },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 0,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
-  },
-  {
-    id: 1,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
-  },
-  {
-    id: 2,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
+    url: `${blogPostURLS.PUSHPA_2_RELATIVE}`,
+    title: `${SEO_OBJ.PUSHPA_2_THE_RULE.title}`,
+    description: `${SEO_OBJ.PUSHPA_2_THE_RULE.description}`,
+    lastUpdateTime: `${SEO_OBJ.PUSHPA_2_THE_RULE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.PUSHPA_2_THE_RULE.publishedTime}`,
+    tags: SEO_OBJ.PUSHPA_2_THE_RULE.tags!,
+    featuredImage: SEO_OBJ.PUSHPA_2_THE_RULE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.PUSHPA_2_THE_RULE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.PUSHPA_2_THE_RULE.ogImageURL}`,
   },
 ];
