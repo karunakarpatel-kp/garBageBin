@@ -20,7 +20,7 @@ const Navigation = (props: NavigationProps) => {
   const pathName = usePathname();
 
   const onLogoClickHandler = () => {
-    navigate.push("/");
+    navigate.push("/telugu-movies");
   };
 
   useEffect(() => {
@@ -49,32 +49,56 @@ const Navigation = (props: NavigationProps) => {
           <Image src={logo} alt="aBOMMA logo" className="border-0 border-white mt-0" />
         </div>
         <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
-          <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-end mt-2">
+          <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-start mt-2">
             <li>
-              <Link href="/" className="text-white">
-                <FaHome size={27} />
-                {/* Login */}
+              <Link href="/telugu-movies" className="text-white no-underline text-lg">
+                Home
               </Link>
             </li>
-
             <li>
+              <Link href="/telugu-movies" className="text-white no-underline text-lg ">
+                Telugu Movies
+              </Link>
+            </li>
+            <li>
+              <Link href="/privacy" className="text-white no-underline text-lg hidden lg:block">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/disclaimer" className="text-white no-underline text-lg hidden lg:block">
+                Disclaimer
+              </Link>
+            </li>{" "}
+            <li>
+              <Link href="/contact" className="text-white no-underline text-lg hidden lg:block">
+                Contact Us
+              </Link>
+            </li>
+            {/* <li>
+              <Link href="/telugu-movies" className="text-white no-underline text-lg block border lg:block ">
+                Kannada
+              </Link>
+            </li> */}
+            {/* <li>
+              <Link href="/telugu-movies" className="text-white no-underline text-lg invisible lg:block ">
+                Bollywood
+              </Link>
+            </li> */}
+            {/* <li>
               <Link href="/" className="text-white">
                 <FaBlog size={27} />
-                {/* Login */}
+                Login
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
-
-        {/* <div className="md:hidden border-0 col-span-3 flex justify-center items-center  cursor-pointer">
-          <GiHamburgerMenu size={27} fill="white" onClick={onOpenClickHandler} />
-        </div> */}
 
         <div className="hidden md:invisible lg:flex col-span-1 border-2 border-white self-stretch justify-center items-center ">
           Right
         </div>
       </div>
-      {homePage && (
+      {false && (
         <div className="border-0 border-white text-white pt-10 bg-brandColor dark:bg-slate-900 dark:border-b dark:border-b-slate-800">
           <div className="text-white border-0 text-center py-9 mt-10">
             <h1 className="text-white font-bold text-3xl md:text-4xl">Welcome to Abomma</h1>

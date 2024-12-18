@@ -4,46 +4,32 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import sampleImage from "../public/pushpa-2-the-rule.jpg";
+import sampleImage from "../public/aBOMMA-logo.png";
+import MDXImage from "Components/MDXImage";
 
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
 
 export default function Home() {
   return (
     <>
-      <div className="LoadingUI grid  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-11 md:gap-14 mt-10 mb-8 mx-2 ">
-        {blogPostsObj.map((singleBlogPost, index) => {
-          return (
-            <div
-              key={index}
-              className=" shadow-sm md:shadow-sm mt-0 m-auto p-3 md:p-5 no-underline ring-1 ring-gray-200 dark:ring-slate-600 rounded-md hover:bg-slate-50  dark:bg-slate-900 dark:hover:bg-slate-800 h-full "
+      <div className="border-0 border-white z-[9999999999999999] absolute top-0 right-0 bottom-0 left-0 h-dvh bg-slate-800 flex justify-center align-middle">
+        <div className="container border shadow-2xl border-slate-700 md:w-2/6 lg:w-2/6 m-auto rounded-md relative">
+          <span className="inline-flex rounded-full h-4 w-4 bg-sky-500 absolute right-0 top-0 animate-ping"></span>
+          <Image src={sampleImage} alt="sample-image" className="mt-12 m-auto" />
+          <div className="text-center">
+            <p>100% Telugu Entertainment</p>
+            <Link
+              href="/telugu-movies"
+              className="px-11 py-3 border border-slate-500 bg-[#fffe08] text-black uppercase text-lg font-semibold mb-4 no-underline inline-block rounded-md"
             >
-              <Link href={singleBlogPost.url} className="no-underline">
-                <h1 className="text-2xl lg:text-3xl leading-snug  break-words font-bold font-sans mb-0 px-1">
-                  {singleBlogPost.title}
-                </h1>
-                <Image
-                  src={singleBlogPost.featuredImage}
-                  alt={singleBlogPost.featuredImageAltText}
-                  className="mt-3 mb-3  h-[450px] ring-1 rounded-md bg-slate-200 dark:bg-slate-800"
-                />
-                <p className="text-xl mt-0  font-normal line-clamp-4 leading-relaxed">{singleBlogPost.description}</p>
-                <div className="flex  space-x-1 md:space-x-2 border-0 border-white flex-wrap  justify-start space-y-2 items-baseline -mt-3 ">
-                  {singleBlogPost.tags.map((singleTag, index) => {
-                    return (
-                      <div
-                        className="no-underline border border-slate-100 bg-slate-100 dark:bg-slate-900 dark:border-slate-700 rounded-lg px-3 py-1 text-base "
-                        key={index}
-                      >
-                        {singleTag.tag}
-                      </div>
-                    );
-                  })}
-                </div>
-              </Link>
-            </div>
-          );
-        })}
+              Enter
+            </Link>
+            <p className="w-5/6 m-auto mb-8">
+              Watch and Download iBOMMA Telugu movies New 2024 in an excellent quality @ smallest file size. Developed
+              for smartphones, tablets, PC's.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -81,5 +67,44 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */
+}
+
+// Horizontal Design Old
+
+{
+  /* <div className="LoadingUI grid  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-11 md:gap-14 mt-10 mb-8 mx-2 ">
+        {blogPostsObj.map((singleBlogPost, index) => {
+          return (
+            <div
+              key={index}
+              className=" shadow-sm md:shadow-sm mt-0 m-auto p-3 md:p-5 no-underline ring-1 ring-gray-200 dark:ring-slate-600 rounded-md hover:bg-slate-50  dark:bg-slate-900 dark:hover:bg-slate-800 h-full "
+            >
+              <Link href={singleBlogPost.url} className="no-underline">
+                <h1 className="text-2xl lg:text-3xl leading-snug  break-words font-bold font-sans mb-0 px-1">
+                  {singleBlogPost.title}
+                </h1>
+                <Image
+                  src={singleBlogPost.featuredImage}
+                  alt={singleBlogPost.featuredImageAltText}
+                  className="mt-3 mb-3  h-[450px] ring-1 rounded-md bg-slate-200 dark:bg-slate-800"
+                />
+                <p className="text-xl mt-0  font-normal line-clamp-4 leading-relaxed">{singleBlogPost.description}</p>
+                <div className="flex  space-x-1 md:space-x-2 border-0 border-white flex-wrap  justify-start space-y-2 items-baseline -mt-3 ">
+                  {singleBlogPost.tags.map((singleTag, index) => {
+                    return (
+                      <div
+                        className="no-underline border border-slate-100 bg-slate-100 dark:bg-slate-900 dark:border-slate-700 rounded-lg px-3 py-1 text-base "
+                        key={index}
+                      >
+                        {singleTag.tag}
+                      </div>
+                    );
+                  })}
+                </div>
+              </Link>
+            </div>
+          );
+        })}
       </div> */
 }
