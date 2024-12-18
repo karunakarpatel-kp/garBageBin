@@ -26,7 +26,7 @@ export default function Home() {
             </Link>
             <p className="w-5/6 m-auto mb-8">
               Watch and Download iBOMMA Telugu movies New 2024 in an excellent quality @ smallest file size. Developed
-              for smartphones, tablets, PC's.
+              for smartphones, tablets, PCs.
             </p>
           </div>
         </div>
