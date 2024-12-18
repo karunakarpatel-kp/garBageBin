@@ -12,7 +12,7 @@ import Article from "Components/Article/Article";
 const BlogPostLayoutUI = (props: any) => {
   return (
     <>
-      <section className="border-0 border-green-900 w-full grid grid-cols-12 mt-11 md:mt-20 prose prose-slate prose-xl prose-headings:text-3xl  prose-headings:my-4 md:prose-lg md:prose-h1:text-4xl md:prose-h1:leading-tight lg:prose-xl md:prose-img:h-[520px] lg:max-w-screen-2xl">
+      <section className="border-0 border-green-900 w-full grid grid-cols-12 mt-11 md:mt-20 prose prose-slate prose-xl prose-headings:text-3xl  prose-headings:my-4 md:prose-lg md:prose-h1:text-4xl md:prose-h1:leading-tight lg:prose-xl   md:prose-img:h-[520px] lg:max-w-screen-2xl dark:prose-invert ">
         <Article incomingProps={props} />
         <Sidebar />
       </section>

@@ -35,7 +35,7 @@ const RootLayout = (props: RootLayoutProps) => {
   };
 
   return (
-    <html lang="en" className={darkMode ? "dark transition-colors duration-100" : "transition-all duration-300"}>
+    <html lang="en" className={true ? "dark transition-colors duration-100" : "transition-all duration-300"}>
       <body className="relative p-0 m-0 bg-white dark:bg-slate-900 dark:prose-invert prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
         <ReadingProgressBar />
         <AppProgressBar height="1px" color="#ffffff" options={{ showSpinner: true }} shallowRouting />

@@ -19,7 +19,7 @@ export default function Home() {
               className=" shadow-sm md:shadow-sm mt-0 m-auto p-3 md:p-5 no-underline ring-1 ring-gray-200 dark:ring-slate-600 rounded-md hover:bg-slate-50  dark:bg-slate-900 dark:hover:bg-slate-800 h-full "
             >
               <Link href={singleBlogPost.url} className="no-underline">
-                <h1 className="text-3xl leading-snug  break-words font-bold font-sans mb-0 px-1">
+                <h1 className="text-2xl lg:text-3xl leading-snug  break-words font-bold font-sans mb-0 px-1">
                   {singleBlogPost.title}
                 </h1>
                 <Image

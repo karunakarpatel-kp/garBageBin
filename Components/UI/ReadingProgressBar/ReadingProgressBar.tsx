@@ -19,7 +19,7 @@ const ReadingProgressBar = () => {
 
   return (
     <div
-      className="h-[2px] fixed top-[61px] bg-[#ffffff] border-0 border-red-800 block z-[999999999]"
+      className="h-[2px] fixed top-[61px] bg-slate-600 border-0 border-red-800 block z-[999999999]"
       style={{ width: `${width}%` }}
     ></div>
   );

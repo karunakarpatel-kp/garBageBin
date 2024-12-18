@@ -75,7 +75,7 @@ const Navigation = (props: NavigationProps) => {
         </div>
       </div>
       {homePage && (
-        <div className="border-0 border-white text-white pt-10 bg-brandColor ">
+        <div className="border-0 border-white text-white pt-10 bg-brandColor dark:bg-slate-900 dark:border-b dark:border-b-slate-800">
           <div className="text-white border-0 text-center py-9 mt-10">
             <h1 className="text-white font-bold text-3xl md:text-4xl">Welcome to Abomma</h1>
             <p className="text-white font-semibold text-xl capitalize">
