@@ -22,6 +22,11 @@ export function CustomMetaData(props: any) {
     verification: {
       google: process.env.GOOGLE_ANALYTICS_TAG,
     },
+    // Added Google Console Tag Below
+    other: {
+      // "google-site-verification": "ltQ1SKk6_-3Ng5KFPA9PmkjStWZN9zbvCKbhjOoeapg",
+      "google-site-verification": process.env.GOOGLE_CONSOLE_TAG as string,
+    },
     category: filteredOBJ[0].category,
     keywords: ["aBOMMA", "iBOMMA", "iBOMMA MOVIES", "BAPPAM"],
     creator: "iBOMMA",
