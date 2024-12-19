@@ -41,20 +41,20 @@ export const dynamicLastUpdatedTime = () => {
 
 interface Base_Url_Props {
   HOME_PAGE_BASE_URL: string;
-  BLOG_PAGE_BASE_URL: string;
+  TELUGU_MOVIES_PAGE_BASE_URL: string;
 }
 
 export const BASE_URLS: Base_Url_Props = {
   HOME_PAGE_BASE_URL: process.env.HOME_PAGE_BASE_URL!,
-  BLOG_PAGE_BASE_URL: `${process.env.HOME_PAGE_BASE_URL}/Blog`,
+  TELUGU_MOVIES_PAGE_BASE_URL: `${process.env.HOME_PAGE_BASE_URL}/telugu-movies`,
 };
 
 interface Blog_Post_URL_Props {
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
 
-  BLOG_PAGE_RELATIVE: string;
-  BLOG_PAGE_ABSOLUTE: string;
+  TELUGU_MOVIES_ABSOLUTE: string;
+  TELUGU_MOVIES_RELATIVE: string;
 
   PRIVACY_PAGE_ABSOLUTE: string;
   PRIVACY_PAGE_RELATIVE: string;
@@ -82,8 +82,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   HOME_PAGE_ABSOLUTE: BASE_URLS.HOME_PAGE_BASE_URL,
   HOME_PAGE_RELATIVE: "/",
 
-  BLOG_PAGE_ABSOLUTE: BASE_URLS.BLOG_PAGE_BASE_URL,
-  BLOG_PAGE_RELATIVE: "/Blog",
+  TELUGU_MOVIES_ABSOLUTE: BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL,
+  TELUGU_MOVIES_RELATIVE: "/telugu-movies",
 
   PRIVACY_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/privacy`,
   PRIVACY_PAGE_RELATIVE: "/privacy",
@@ -156,20 +156,20 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     tags: [{ tag: "HomePage", href: "/" }],
   },
   // BlogPage  /Blog/
-  // BLOG_PAGE: {
-  //   absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
-  //   relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
-  //   title: "iBOMMA- Latest News, Movie Updates & Upcoming Releases",
-  //   description:
-  //     "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
-  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-  //   publishedTime: "2024-12-17T19:07:55+00:00",
-  //   featuredImage: welcomePatelsImage,
-  //   featuredImageAltText: "iBOMMA-homepage",
-  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
-  //   changeFrequency: "daily",
-  //   tags: [{ tag: "Blog", href: "/Blog" }],
-  // },
+  TELUGU_MOVIES_PAGE: {
+    absoluteURL: blogPostURLS.TELUGU_MOVIES_ABSOLUTE,
+    relativeURL: blogPostURLS.TELUGU_MOVIES_RELATIVE,
+    title: "iBOMMA- Latest Telugu Movies, Updates & Upcoming Releases",
+    description:
+      "Stay updated with the latest telugu news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2024-12-19T15:37:55 IST",
+    featuredImage: welcomePatelsImage,
+    featuredImageAltText: "iBOMMA-homepage",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    changeFrequency: "daily",
+    tags: [{ tag: "Blog", href: "/Blog" }],
+  },
 
   POLICY_PAGE: {
     absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
