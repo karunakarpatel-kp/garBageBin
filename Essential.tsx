@@ -4,6 +4,7 @@ import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import thangalaanPoster from "./public/Thangalaan_poster.jpg";
 import luckyBaskharPoster from "./public/Lucky_Baskhar_film_poster.jpg";
 import kanguvaPoster from "./public/Kanguva_poster.jpg";
+import KAPoster from "./public/KA_Telugu_film_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -80,6 +81,9 @@ interface Blog_Post_URL_Props {
 
   KANGUVA_ABSOLUTE: string;
   KANGUVA_RELATIVE: string;
+
+  KA_ABSOLUTE: string;
+  KA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -112,6 +116,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   KANGUVA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Kanguva`,
   KANGUVA_RELATIVE: "/Kanguva",
+
+  KA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/KA`,
+  KA_RELATIVE: "/KA",
 };
 
 interface blogPostsObjProps {
@@ -318,6 +325,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "kanguva-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Kanguva_poster.jpg`,
   },
+
+  KA: {
+    absoluteURL: blogPostURLS.KA_ABSOLUTE,
+    relativeURL: blogPostURLS.KA_RELATIVE,
+    title: "KA Telugu Movie - iBOMMA.",
+    description:
+      "Watch the newly released KA Telugu movie in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-19T15:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "KA", href: `${blogPostURLS.KA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "KA iBOMMA", href: `${blogPostURLS.KA_RELATIVE}` },
+      { tag: "KA review", href: `${blogPostURLS.KA_RELATIVE}` },
+    ],
+    featuredImage: KAPoster,
+    featuredImageAltText: "KA-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/KA_Telugu_film_poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -380,5 +406,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.KANGUVA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.KANGUVA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.KANGUVA.ogImageURL}`,
+  },
+  {
+    id: 5,
+    url: `${blogPostURLS.KA_RELATIVE}`,
+    title: `${SEO_OBJ.KA.title}`,
+    description: `${SEO_OBJ.KA.description}`,
+    lastUpdateTime: `${SEO_OBJ.KA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.KA.publishedTime}`,
+    tags: SEO_OBJ.KA.tags!,
+    featuredImage: SEO_OBJ.KA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.KA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.KA.ogImageURL}`,
   },
 ];
