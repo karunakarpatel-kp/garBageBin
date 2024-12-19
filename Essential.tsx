@@ -3,6 +3,7 @@ import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import thangalaanPoster from "./public/Thangalaan_poster.jpg";
 import luckyBaskharPoster from "./public/Lucky_Baskhar_film_poster.jpg";
+import kanguvaPoster from "./public/Kanguva_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -76,6 +77,9 @@ interface Blog_Post_URL_Props {
 
   LUCKY_BASKHAR_ABSOLUTE: string;
   LUCKY_BASKHAR_RELATIVE: string;
+
+  KANGUVA_ABSOLUTE: string;
+  KANGUVA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -105,6 +109,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   LUCKY_BASKHAR_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Lucky-Baskhar`,
   LUCKY_BASKHAR_RELATIVE: "/Lucky-Baskhar",
+
+  KANGUVA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Kanguva`,
+  KANGUVA_RELATIVE: "/Kanguva",
 };
 
 interface blogPostsObjProps {
@@ -292,6 +299,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "lucky-baskhar-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Lucky_Baskhar_film_poster.jpg`,
   },
+
+  KANGUVA: {
+    absoluteURL: blogPostURLS.KANGUVA_ABSOLUTE,
+    relativeURL: blogPostURLS.KANGUVA_RELATIVE,
+    title: " Kanguva Telugu Movie - iBOMMA.",
+    description:
+      "Watch the newly released Kanguva movie in iBOMMA and also check out the latest reviews and updates. This amazing film tells the story of a bounty hunter in 2024, whose connection with a child is mysteriously connected to a fierce tribal warrior's promise to a child in the year 1070. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
+    publishedTime: "2024-12-19T15:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Kanguva", href: `${blogPostURLS.KANGUVA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Kanguva iBOMMA", href: `${blogPostURLS.KANGUVA_RELATIVE}` },
+      { tag: "Kanguva review", href: `${blogPostURLS.KANGUVA_RELATIVE}` },
+    ],
+    featuredImage: kanguvaPoster,
+    featuredImageAltText: "kanguva-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Kanguva_poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -342,5 +368,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.LUCKY_BASKHAR.featuredImage,
     featuredImageAltText: `${SEO_OBJ.LUCKY_BASKHAR.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.LUCKY_BASKHAR.ogImageURL}`,
+  },
+  {
+    id: 4,
+    url: `${blogPostURLS.KANGUVA_RELATIVE}`,
+    title: `${SEO_OBJ.KANGUVA.title}`,
+    description: `${SEO_OBJ.KANGUVA.description}`,
+    lastUpdateTime: `${SEO_OBJ.KANGUVA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.KANGUVA.publishedTime}`,
+    tags: SEO_OBJ.KANGUVA.tags!,
+    featuredImage: SEO_OBJ.KANGUVA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.KANGUVA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.KANGUVA.ogImageURL}`,
   },
 ];
