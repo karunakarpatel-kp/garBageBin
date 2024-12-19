@@ -8,7 +8,7 @@ import React from "react";
 const Sidebar = () => {
   return (
     <>
-      <aside className="border-0 border-slate-900 col-span-12 mt-5 lg:mt-0  lg:col-span-4 relative dark:border-slate-900">
+      <aside className="border-0 border-slate-900 col-span-12 mt-5 lg:mt-0  lg:col-span-4 relative dark:border-slate-900 text-center">
         {/* Sticky Section */}
         {/* md:sticky */}
         <section className=" col-span-12 md:col-span-4 lg:col-span-4 border-0 border-red-700 p-0 lg:px-5  md:top-20  ">

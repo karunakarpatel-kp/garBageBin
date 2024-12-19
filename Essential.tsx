@@ -1,6 +1,7 @@
 import welcomePatelsImage from "./public/iBOMMA.jpg";
 import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
+import thangalaanPoster from "./public/Thangalaan_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -68,6 +69,9 @@ interface Blog_Post_URL_Props {
 
   AMARAN_ABSOLUTE: string;
   AMARAN_RELATIVE: string;
+
+  THANGALAAN_ABSOLUTE: string;
+  THANGALAAN_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -91,6 +95,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   AMARAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Amaran`,
   AMARAN_RELATIVE: "/Amaran",
+
+  THANGALAAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Thangalaan`,
+  THANGALAAN_RELATIVE: "/Thangalaan",
 };
 
 interface blogPostsObjProps {
@@ -240,6 +247,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "amaran-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Amaran_2024_poster.jpg`,
   },
+
+  THANGALAAN: {
+    absoluteURL: blogPostURLS.THANGALAAN_ABSOLUTE,
+    relativeURL: blogPostURLS.THANGALAAN_RELATIVE,
+    title: "Thangalaan Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, Check out the latest review about the recently released Telugu movie Thangalaan! This amazing film tells the story of a brave farmer Thangalaan, and his incredible family journey. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
+    publishedTime: "2024-12-19T10:07:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "THANGALAAN", href: `${blogPostURLS.THANGALAAN_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Thangalaan", href: `${blogPostURLS.THANGALAAN_RELATIVE}` },
+      { tag: "Thangalaan Review", href: `${blogPostURLS.THANGALAAN_RELATIVE}` },
+    ],
+    featuredImage: thangalaanPoster,
+    featuredImageAltText: "thangalaan-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Thangalaan_poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -266,5 +292,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.AMARAN.featuredImage,
     featuredImageAltText: `${SEO_OBJ.AMARAN.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.AMARAN.ogImageURL}`,
+  },
+  {
+    id: 2,
+    url: `${blogPostURLS.THANGALAAN_RELATIVE}`,
+    title: `${SEO_OBJ.THANGALAAN.title}`,
+    description: `${SEO_OBJ.THANGALAAN.description}`,
+    lastUpdateTime: `${SEO_OBJ.THANGALAAN.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.THANGALAAN.publishedTime}`,
+    tags: SEO_OBJ.THANGALAAN.tags!,
+    featuredImage: SEO_OBJ.THANGALAAN.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.THANGALAAN.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.THANGALAAN.ogImageURL}`,
   },
 ];
