@@ -1,5 +1,6 @@
 import welcomePatelsImage from "./public/iBOMMA.jpg";
 import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
+import amaranPoster from "./public/Amaran_2024_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -64,6 +65,9 @@ interface Blog_Post_URL_Props {
 
   PUSHPA_2_ABSOLUTE: string;
   PUSHPA_2_RELATIVE: string;
+
+  AMARAN_ABSOLUTE: string;
+  AMARAN_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -84,6 +88,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   PUSHPA_2_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule`,
   PUSHPA_2_RELATIVE: "/pushpa-2-the-rule",
+
+  AMARAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Amaran`,
+  AMARAN_RELATIVE: "/Amaran",
 };
 
 interface blogPostsObjProps {
@@ -135,20 +142,20 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     tags: [{ tag: "HomePage", href: "/" }],
   },
   // BlogPage  /Blog/
-  BLOG_PAGE: {
-    absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
-    relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
-    title: "iBOMMA- Latest News, Movie Updates & Upcoming Releases",
-    description:
-      "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2024-12-17T19:07:55+00:00",
-    featuredImage: welcomePatelsImage,
-    featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
-    changeFrequency: "daily",
-    tags: [{ tag: "Blog", href: "/Blog" }],
-  },
+  // BLOG_PAGE: {
+  //   absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
+  //   relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
+  //   title: "iBOMMA- Latest News, Movie Updates & Upcoming Releases",
+  //   description:
+  //     "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
+  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+  //   publishedTime: "2024-12-17T19:07:55+00:00",
+  //   featuredImage: welcomePatelsImage,
+  //   featuredImageAltText: "iBOMMA-homepage",
+  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+  //   changeFrequency: "daily",
+  //   tags: [{ tag: "Blog", href: "/Blog" }],
+  // },
 
   POLICY_PAGE: {
     absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
@@ -214,6 +221,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "pushpa-2-the-rule",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule.png`,
   },
+
+  AMARAN: {
+    absoluteURL: blogPostURLS.AMARAN_ABSOLUTE,
+    relativeURL: blogPostURLS.AMARAN_RELATIVE,
+    title: "AMARAN Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, Check out the latest review about the recently released Telugu movie Amaran! This amazing film tells the story of a brave soldier, Major Mukund, and his incredible journey. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
+    publishedTime: "2024-12-19T10:07:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "AMARAN", href: `${blogPostURLS.AMARAN_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "AMARAN", href: `${blogPostURLS.AMARAN_RELATIVE}` },
+      { tag: "AMARAN Review", href: `${blogPostURLS.AMARAN_RELATIVE}` },
+    ],
+    featuredImage: amaranPoster,
+    featuredImageAltText: "amaran-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Amaran_2024_poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -228,5 +254,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.PUSHPA_2_THE_RULE.featuredImage,
     featuredImageAltText: `${SEO_OBJ.PUSHPA_2_THE_RULE.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.PUSHPA_2_THE_RULE.ogImageURL}`,
+  },
+  {
+    id: 1,
+    url: `${blogPostURLS.AMARAN_RELATIVE}`,
+    title: `${SEO_OBJ.AMARAN.title}`,
+    description: `${SEO_OBJ.AMARAN.description}`,
+    lastUpdateTime: `${SEO_OBJ.AMARAN.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.AMARAN.publishedTime}`,
+    tags: SEO_OBJ.AMARAN.tags!,
+    featuredImage: SEO_OBJ.AMARAN.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.AMARAN.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.AMARAN.ogImageURL}`,
   },
 ];
