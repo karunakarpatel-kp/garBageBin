@@ -2,6 +2,7 @@ import welcomePatelsImage from "./public/iBOMMA.jpg";
 import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import thangalaanPoster from "./public/Thangalaan_poster.jpg";
+import luckyBaskharPoster from "./public/Lucky_Baskhar_film_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -72,6 +73,9 @@ interface Blog_Post_URL_Props {
 
   THANGALAAN_ABSOLUTE: string;
   THANGALAAN_RELATIVE: string;
+
+  LUCKY_BASKHAR_ABSOLUTE: string;
+  LUCKY_BASKHAR_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -98,6 +102,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   THANGALAAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Thangalaan`,
   THANGALAAN_RELATIVE: "/Thangalaan",
+
+  LUCKY_BASKHAR_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Lucky-Baskhar`,
+  LUCKY_BASKHAR_RELATIVE: "/Lucky-Baskhar",
 };
 
 interface blogPostsObjProps {
@@ -141,7 +148,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Stay updated with the latest news, upcoming movie releases, and reviews on iBomma. Get all the details, release dates, and reviews in one place for the newest films hitting the screen at ibomma.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2024-12-17T19:07:55+00:00",
+    publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -171,7 +178,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to iBOMMA privacy policy. In here you can find all the details about privacy policy of iBOMMA website",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2024-12-17T19:07:55+00:00",
+    publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -186,7 +193,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to iBOMMA contact page. In here you can find all the details of about iBOMMA contact information and a way to contact administrator of the iBOMMA site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2024-12-17T19:07:55+00:00",
+    publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -201,7 +208,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to iBOMMA disclaimer page. In here you can find all the details of about iBOMMA's Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2024-12-17T19:07:55+00:00",
+    publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -216,7 +223,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Pushpa 2 - The Rule Telugu Movie - iBOMMA.",
     description:
       " Check the latest review about the recently released telugu movie Pushpa 2 - The Rule in iBOMMA. You can watch the trailers, give reviews or even you can watch and download the movie at excellent quality.",
-    publishedTime: "2024-12-17T19:07:55+00:00",
+    publishedTime: "2024-12-18T15:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Pushpa 2 The Rule", href: `${blogPostURLS.PUSHPA_2_RELATIVE}` },
@@ -235,7 +242,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "AMARAN Telugu Movie - iBOMMA.",
     description:
       "iBOMMA, Check out the latest review about the recently released Telugu movie Amaran! This amazing film tells the story of a brave soldier, Major Mukund, and his incredible journey. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
-    publishedTime: "2024-12-19T10:07:55+00:00",
+    publishedTime: "2024-12-19T15:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "AMARAN", href: `${blogPostURLS.AMARAN_RELATIVE}` },
@@ -254,7 +261,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Thangalaan Telugu Movie - iBOMMA.",
     description:
       "iBOMMA, Check out the latest review about the recently released Telugu movie Thangalaan! This amazing film tells the story of a brave farmer Thangalaan, and his incredible family journey. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
-    publishedTime: "2024-12-19T10:07:55+00:00",
+    publishedTime: "2024-12-19T15:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "THANGALAAN", href: `${blogPostURLS.THANGALAAN_RELATIVE}` },
@@ -265,6 +272,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: thangalaanPoster,
     featuredImageAltText: "thangalaan-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Thangalaan_poster.jpg`,
+  },
+
+  LUCKY_BASKHAR: {
+    absoluteURL: blogPostURLS.LUCKY_BASKHAR_ABSOLUTE,
+    relativeURL: blogPostURLS.LUCKY_BASKHAR_RELATIVE,
+    title: "Lucky Baskhar Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, Check out the latest review about the recently released Telugu movie Lucky Baskhar! This amazing film tells the story of a poor man who starts doing money scams as he was struggling to take care of his family while dealing with debt and feeling ashamed.You can watch the trailers, read reviews, or even enjoy the Lucky Baskhar movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
+    publishedTime: "2024-12-19T15:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Lucky Baskhar", href: `${blogPostURLS.LUCKY_BASKHAR_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Lucky Baskhar", href: `${blogPostURLS.LUCKY_BASKHAR_RELATIVE}` },
+      { tag: "Lucky Baskhar review", href: `${blogPostURLS.LUCKY_BASKHAR_RELATIVE}` },
+    ],
+    featuredImage: luckyBaskharPoster,
+    featuredImageAltText: "lucky-baskhar-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Lucky_Baskhar_film_poster.jpg`,
   },
 };
 
@@ -304,5 +330,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.THANGALAAN.featuredImage,
     featuredImageAltText: `${SEO_OBJ.THANGALAAN.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.THANGALAAN.ogImageURL}`,
+  },
+  {
+    id: 3,
+    url: `${blogPostURLS.LUCKY_BASKHAR_RELATIVE}`,
+    title: `${SEO_OBJ.LUCKY_BASKHAR.title}`,
+    description: `${SEO_OBJ.LUCKY_BASKHAR.description}`,
+    lastUpdateTime: `${SEO_OBJ.LUCKY_BASKHAR.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.LUCKY_BASKHAR.publishedTime}`,
+    tags: SEO_OBJ.LUCKY_BASKHAR.tags!,
+    featuredImage: SEO_OBJ.LUCKY_BASKHAR.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.LUCKY_BASKHAR.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.LUCKY_BASKHAR.ogImageURL}`,
   },
 ];
