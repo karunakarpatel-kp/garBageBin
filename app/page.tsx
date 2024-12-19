@@ -15,7 +15,8 @@ export default function Home() {
       <div className="border-0 border-white z-[9999999999999999] absolute top-0 right-0 bottom-0 left-0 h-dvh bg-slate-800 flex justify-center align-middle">
         <div className="container border shadow-2xl border-slate-700 md:w-2/6 lg:w-2/6 m-auto rounded-md relative">
           <span className="inline-flex rounded-full h-4 w-4 bg-sky-500 absolute right-0 top-0 animate-ping"></span>
-          <Image src={sampleImage} alt="sample-image" className="mt-12 m-auto" />
+          <h1 className="text-center text-xs mt-4 text-slate-100">iBOMMA</h1>
+          <Image src={sampleImage} alt="sample-image" className=" m-auto  " />
           <div className="text-center">
             <p>100% Telugu Entertainment</p>
             <Link
