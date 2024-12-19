@@ -33,12 +33,14 @@ export default function TeluguMovies() {
                 <Image
                   src={singleBlogPost.featuredImage}
                   alt={singleBlogPost.featuredImageAltText}
-                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-200 dark:bg-slate-800"
+                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-800 dark:bg-slate-800 m-auto "
                 />
-                <p className=" text-[#fffe08] border border-slate-800 inline-block p-0 px-4 absolute top-0 right-50 z-50 bg-slate-800 rounded-md shadow-xl">
-                  {singleBlogPost.publishedTime.split("-")[0]}
-                </p>
-                <h1 className="text-xl lg:text-xl leading-snug  break-words font-bold font-sans mb-0 px-1 text-center">
+                <div className="z-50 text-center -mt-12 ">
+                  <p className=" text-[#fffe08]  inline-block p-0 px-4 text-center m-auto bg-slate-800 rounded-md shadow-xl ">
+                    {singleBlogPost.publishedTime.split("-")[0]}
+                  </p>
+                </div>
+                <h1 className="text-xl lg:text-xl leading-snug  break-words font-bold font-sans mt-4 px-1 text-center">
                   {singleBlogPost.title}
                 </h1>
               </Link>
