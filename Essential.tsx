@@ -5,6 +5,7 @@ import thangalaanPoster from "./public/Thangalaan_poster.jpg";
 import luckyBaskharPoster from "./public/Lucky_Baskhar_film_poster.jpg";
 import kanguvaPoster from "./public/Kanguva_poster.jpg";
 import KAPoster from "./public/KA_Telugu_film_poster.jpg";
+import harikathaPoster from "./public/HariKatha_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -84,6 +85,9 @@ interface Blog_Post_URL_Props {
 
   KA_ABSOLUTE: string;
   KA_RELATIVE: string;
+
+  HARIKATHA_ABSOLUTE: string;
+  HARIKATHA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -119,6 +123,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   KA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/KA`,
   KA_RELATIVE: "/KA",
+
+  HARIKATHA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Harikatha`,
+  HARIKATHA_RELATIVE: "/Harikatha",
 };
 
 interface blogPostsObjProps {
@@ -344,6 +351,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "KA-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/KA_Telugu_film_poster.jpg`,
   },
+
+  HARIKATHA: {
+    absoluteURL: blogPostURLS.HARIKATHA_ABSOLUTE,
+    relativeURL: blogPostURLS.HARIKATHA_RELATIVE,
+    title: "HariKatha Telugu Web Series- iBOMMA.",
+    description:
+      "Watch the newly released HariKatha Telugu series 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-20T07:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Harikatha", href: `${blogPostURLS.HARIKATHA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Harikatha iBOMMA", href: `${blogPostURLS.HARIKATHA_RELATIVE}` },
+      { tag: "Harikatha review", href: `${blogPostURLS.HARIKATHA_RELATIVE}` },
+    ],
+    featuredImage: harikathaPoster,
+    featuredImageAltText: "HariKatha-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/HariKatha_poster.jpg'`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -418,5 +444,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.KA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.KA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.KA.ogImageURL}`,
+  },
+  {
+    id: 6,
+    url: `${blogPostURLS.HARIKATHA_RELATIVE}`,
+    title: `${SEO_OBJ.HARIKATHA.title}`,
+    description: `${SEO_OBJ.HARIKATHA.description}`,
+    lastUpdateTime: `${SEO_OBJ.HARIKATHA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.HARIKATHA.publishedTime}`,
+    tags: SEO_OBJ.HARIKATHA.tags!,
+    featuredImage: SEO_OBJ.HARIKATHA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.HARIKATHA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.HARIKATHA.ogImageURL}`,
   },
 ];

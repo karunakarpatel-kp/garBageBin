@@ -33,7 +33,7 @@ export default function TeluguMovies() {
                 <Image
                   src={singleBlogPost.featuredImage}
                   alt={singleBlogPost.featuredImageAltText}
-                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-800 dark:bg-slate-800 m-auto "
+                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-800 dark:bg-slate-800 m-auto border max-w-xs lg:w-auto"
                 />
                 <div className="z-50 text-center -mt-12 ">
                   <p className=" text-[#fffe08]  inline-block p-0 px-4 text-center m-auto bg-slate-800 rounded-md shadow-xl ">

@@ -49,7 +49,7 @@ const Navigation = (props: NavigationProps) => {
           <Image src={logo} alt="aBOMMA logo" className="border-0 border-white mt-0" />
         </div>
         <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
-          <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-start mt-2">
+          <ul className="list-none flex space-x-0 md:space-x-6 text-white justify-start mt-2">
             <li>
               <Link href="/telugu-movies" className="text-white no-underline text-lg">
                 Home

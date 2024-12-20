@@ -4,6 +4,7 @@ import { blogPostsObj } from "Essential";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SidebarContent from "./SidebarContent";
 
 const Sidebar = () => {
   return (
@@ -12,31 +13,7 @@ const Sidebar = () => {
         {/* Sticky Section */}
         {/* md:sticky */}
         <section className=" col-span-12 md:col-span-4 lg:col-span-4 border-0 border-red-700 p-0 lg:px-5  md:top-20  ">
-          <section>
-            <div className="flex flex-col justify-between  border border-slate-300 dark:border-slate-800 shadow-sm p-0 px-6 py-4 mt-0 ">
-              {/* <div className="text-2xl font-semibold mb-0 ">Watch the Latest</div> */}
-              <div className="LoadingUI ">
-                {blogPostsObj
-                  .map((singleBlogPost, index) => {
-                    return (
-                      <div key={index} className=" shadow-sm md:shadow-sm mt-0 m-auto no-underline h-full ">
-                        <Link href={singleBlogPost.url} className="no-underline m-0 ">
-                          <h1 className="break-words px-1 underline font-medium !text-2xl mb-0">
-                            {singleBlogPost.title}
-                          </h1>
-                          <MDXImage
-                            src={singleBlogPost.featuredImage}
-                            alt={singleBlogPost.featuredImageAltText}
-                            extraStyling="h-fit w-full max-w-[380px] min-h-[400px]  m-auto"
-                          />
-                        </Link>
-                      </div>
-                    );
-                  })
-                  .reverse()}
-              </div>
-            </div>
-          </section>
+          <SidebarContent />
         </section>
 
         <section className=" col-span-12 md:col-span-4 lg:col-span-4 border-0 border-red-700 p-0  lg:px-5 mb-5 md:top-20 md:sticky">
