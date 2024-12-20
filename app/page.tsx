@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import sampleImage from "../public/aBOMMA-logo.png";
+import sampleImage from "../public/iBOMMA-logo.png";
 import MDXImage from "Components/MDXImage";
 
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });

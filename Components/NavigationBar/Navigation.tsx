@@ -7,17 +7,26 @@ import { usePathname, useRouter } from "next/navigation";
 import { IoIosLogIn, IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/aBOMMA-logo.png";
+import logo from "../../public/iBOMMA-logo.png";
 
 interface NavigationProps {
   darkMode: boolean | null;
 }
 
 const Navigation = (props: NavigationProps) => {
+  const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false);
   const [homePage, setHomePage] = useState<boolean>(false);
 
   const navigate = useRouter();
   const pathName = usePathname();
+
+  const onOpenClickHandler = () => {
+    setOpenMobileMenu(true);
+  };
+
+  const onCloseClickHandler = () => {
+    setOpenMobileMenu(false);
+  };
 
   const onLogoClickHandler = () => {
     navigate.push("/telugu-movies");
@@ -35,21 +44,23 @@ const Navigation = (props: NavigationProps) => {
     <>
       <div
         className={
-          "h-16  bg-brandColor border-b border-b-slate-500 dark:bg-slate-900 dark:border-b dark:border-b-slate-700  md:ml-0 pl-2 grid grid-cols-12 fixed w-full z-50"
+          !openMobileMenu
+            ? "h-16  bg-brandColor border-b border-b-gray-500 dark:bg-slate-900 dark:border-b dark:border-b-slate-700  md:ml-0 pl-2 grid grid-cols-12 fixed w-full z-50"
+            : ""
         }
       >
         {/* Desktop */}
-        <div className="hidden md:invisible lg:flex col-span-1 border-0 border-white self-stretch justify-center items-center ">
+        <div className="hidden md:invisible md:flex col-span-1 border-0 border-white self-stretch justify-center items-center ">
           left
         </div>
         <div
-          className="col-span-5 md:col-span-4  border-0 border-green-800 mt-1 ml-2 md:ml-0 lg:ml-0 cursor-pointer"
+          className="col-span-9 md:col-span-4 border-0 border-green-800 mt-1 ml-0 cursor-pointer"
           onClick={onLogoClickHandler}
         >
-          <Image src={logo} alt="aBOMMA logo" className="border-0 border-white mt-0" />
+          <Image src={logo} alt="iBOMMA logo" className="border-0 border-white mt-0" />
         </div>
-        <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
-          <ul className="list-none flex space-x-0 md:space-x-6 text-white justify-start mt-2">
+        <div className="hidden md:block col-span-6 border-0 border-purple-400 m-0 p-0 ">
+          <ul className="list-none flex space-x-6 text-white justify-end mt-2">
             <li>
               <Link href="/telugu-movies" className="text-white no-underline text-lg">
                 Home
@@ -94,20 +105,94 @@ const Navigation = (props: NavigationProps) => {
           </ul>
         </div>
 
-        <div className="hidden md:invisible lg:flex col-span-1 border-2 border-white self-stretch justify-center items-center ">
+        <div className="md:hidden border-0 col-span-3 flex justify-center items-center cursor-pointer pb-8">
+          <GiHamburgerMenu size={27} fill="white" onClick={onOpenClickHandler} />
+        </div>
+
+        <div className="hidden md:invisible md:flex col-span-1 border border-white self-stretch justify-center items-center ">
           Right
         </div>
       </div>
-      {false && (
-        <div className="border-0 border-white text-white pt-10 bg-brandColor dark:bg-slate-900 dark:border-b dark:border-b-slate-800">
-          <div className="text-white border-0 text-center py-9 mt-10">
-            <h1 className="text-white font-bold text-3xl md:text-4xl">Welcome to Abomma</h1>
-            <p className="text-white font-semibold text-xl capitalize">
-              A place where you learn about the latest news, updates, upcoming releases at Ibomma.
-            </p>
-          </div>
+
+      {/* Mobile */}
+      <div
+        className={
+          openMobileMenu
+            ? "mobile block md:block bg-slate-900 w-full h-[100%] z-50 p-0 m-0 fixed top-0 right-0 ease-in-out  overflow-hidden"
+            : "hidden"
+        }
+      >
+        <div className="mt-1 ml-0 cursor-pointer p-1  mb-0 border-b border-b-slate-700  " onClick={onLogoClickHandler}>
+          <Image src={logo} alt="aBOMMA logo" className="  m-1 -mt-1 " />
         </div>
-      )}
+
+        <div className={openMobileMenu ? "absolute right-10 top-6 cursor-pointer border " : ""}>
+          <IoMdClose size={26} fill="white" onClick={onCloseClickHandler} />
+          {/* <button className="text-white bg-slate-500 px-9 py-1" onClick={onCloseClickHandler}> */}
+          {/* Close */}
+          {/* </button> */}
+        </div>
+        <ul className="list-none  text-white p-0 m-0  ">
+          <li className="p-3 m-0">
+            <Link
+              href="/telugu-movies"
+              className={`${
+                pathName === "/" ? "text-[#ffca3c]" : "text-white"
+              } border-b border-dotted no-underline pb-3 flex gap-3 ml-2 mr-2 `}
+              onClick={onCloseClickHandler}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="p-3 m-0 -mt-0">
+            <Link
+              href="/telugu-movies"
+              className={`${
+                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
+              } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
+              onClick={onCloseClickHandler}
+            >
+              Telugu Movies
+            </Link>
+          </li>
+
+          <li className="p-3 m-0 -mt-0">
+            <Link
+              href="/privacy"
+              className={`${
+                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
+              } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
+              onClick={onCloseClickHandler}
+            >
+              Privacy
+            </Link>
+          </li>
+
+          <li className="p-3 m-0 -mt-0">
+            <Link
+              href="/disclaimer"
+              className={`${
+                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
+              } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
+              onClick={onCloseClickHandler}
+            >
+              Disclaimer
+            </Link>
+          </li>
+
+          <li className="p-3 m-0 -mt-0">
+            <Link
+              href="/contact"
+              className={`${
+                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
+              } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
+              onClick={onCloseClickHandler}
+            >
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };

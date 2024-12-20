@@ -14,7 +14,7 @@ export default function TeluguMovies() {
       <div className="border-0 border-white text-white pt-10 bg-brandColor dark:bg-slate-900 dark:border-b dark:border-b-slate-800">
         <div className="text-white border-0 text-center py-9 mt-10">
           <h1 className="text-white font-bold text-3xl md:text-4xl break-words">Where Quality & Clarity Matters</h1>
-          <p className="text-white text-xl w-3/5 m-auto">
+          <p className="text-white text-xl px-4 md:w-3/5 lg:w-3/5 m-auto">
             Watch / download Telugu movies in an excellent quality at the smallest file size. Exclusively designed &
             developed for smartphones, tablets and PCs.
           </p>
@@ -33,7 +33,7 @@ export default function TeluguMovies() {
                 <Image
                   src={singleBlogPost.featuredImage}
                   alt={singleBlogPost.featuredImageAltText}
-                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-800 dark:bg-slate-800 m-auto border max-w-xs lg:w-auto"
+                  className="mt-3 mb-3  h-[350px] ring-1 rounded-md bg-slate-800 dark:bg-slate-800 m-auto border-0 max-w-xs lg:w-auto"
                 />
                 <div className="z-50 text-center -mt-12 ">
                   <p className=" text-[#fffe08]  inline-block p-0 px-4 text-center m-auto bg-slate-800 rounded-md shadow-xl ">

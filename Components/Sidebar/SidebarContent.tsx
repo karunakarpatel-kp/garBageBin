@@ -23,12 +23,12 @@ const SidebarContent = () => {
                 return (
                   <div key={index} className=" shadow-sm md:shadow-sm mt-0 m-auto no-underline h-full ">
                     <Link href={singleBlogPost.url} className="no-underline m-0 ">
-                      <h1 className="break-words px-1 underline font-medium !text-2xl mb-0">{singleBlogPost.title}</h1>
                       <MDXImage
                         src={singleBlogPost.featuredImage}
                         alt={singleBlogPost.featuredImageAltText}
-                        extraStyling="h-fit w-full max-w-[380px] min-h-[400px]  m-auto"
+                        extraStyling="h-fit w-full max-w-[380px] min-h-[400px]  m-auto -mb-3 "
                       />
+                      <h1 className="break-words px-5 underline font-medium !text-2xl !mb-8">{singleBlogPost.title}</h1>
                     </Link>
                   </div>
                 );
