@@ -6,6 +6,7 @@ import luckyBaskharPoster from "./public/Lucky_Baskhar_film_poster.jpg";
 import kanguvaPoster from "./public/Kanguva_poster.jpg";
 import KAPoster from "./public/KA_Telugu_film_poster.jpg";
 import harikathaPoster from "./public/HariKatha_poster.jpg";
+import jigraPoster from "./public/jigra-poster-2024.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -88,6 +89,9 @@ interface Blog_Post_URL_Props {
 
   HARIKATHA_ABSOLUTE: string;
   HARIKATHA_RELATIVE: string;
+
+  JIGRA_ABSOLUTE: string;
+  JIGRA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -126,6 +130,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   HARIKATHA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Harikatha`,
   HARIKATHA_RELATIVE: "/Harikatha",
+
+  JIGRA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Jigra`,
+  JIGRA_RELATIVE: "/Jigra",
 };
 
 interface blogPostsObjProps {
@@ -370,6 +377,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "HariKatha-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/HariKatha_poster.jpg'`,
   },
+
+  JIGRA: {
+    absoluteURL: blogPostURLS.JIGRA_ABSOLUTE,
+    relativeURL: blogPostURLS.JIGRA_RELATIVE,
+    title: "Jigra Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released Jigra Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-21T07:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Jigra", href: `${blogPostURLS.JIGRA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Jigra iBOMMA", href: `${blogPostURLS.JIGRA_RELATIVE}` },
+      { tag: "Jigra review", href: `${blogPostURLS.JIGRA_RELATIVE}` },
+    ],
+    featuredImage: jigraPoster,
+    featuredImageAltText: "Jigra-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/jigra-poster-2024.jpg'`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -456,5 +482,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.HARIKATHA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.HARIKATHA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.HARIKATHA.ogImageURL}`,
+  },
+  {
+    id: 7,
+    url: `${blogPostURLS.JIGRA_RELATIVE}`,
+    title: `${SEO_OBJ.JIGRA.title}`,
+    description: `${SEO_OBJ.JIGRA.description}`,
+    lastUpdateTime: `${SEO_OBJ.JIGRA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.JIGRA.publishedTime}`,
+    tags: SEO_OBJ.JIGRA.tags!,
+    featuredImage: SEO_OBJ.JIGRA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.JIGRA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.JIGRA.ogImageURL}`,
   },
 ];
