@@ -9,6 +9,7 @@ import harikathaPoster from "./public/HariKatha_poster.jpg";
 import jigraPoster from "./public/jigra-poster-2024.jpg";
 import mechanicRockyPoster from "./public/mechanic-rocky-poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
+import pottelPoster from "./public/pottel-poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -100,6 +101,9 @@ interface Blog_Post_URL_Props {
 
   MUFASA_ABSOLUTE: string;
   MUFASA_RELATIVE: string;
+
+  POTTEL_ABSOLUTE: string;
+  POTTEL_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -147,6 +151,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mufasa-The-Lion-King`,
   MUFASA_RELATIVE: "/Mufasa-The-Lion-King",
+
+  POTTEL_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pottel`,
+  POTTEL_RELATIVE: "/pottel",
 };
 
 interface blogPostsObjProps {
@@ -448,6 +455,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "Mufasa-The-Lion-King-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-telugu-poster.jpg`,
   },
+
+  POTTEL: {
+    absoluteURL: blogPostURLS.POTTEL_ABSOLUTE,
+    relativeURL: blogPostURLS.POTTEL_RELATIVE,
+    title: "Pottel Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released Pottel Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-21T07:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Pottel", href: `${blogPostURLS.POTTEL_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Pottel iBOMMA", href: `${blogPostURLS.POTTEL_RELATIVE}` },
+      { tag: "Pottel", href: `${blogPostURLS.POTTEL_RELATIVE}` },
+    ],
+    featuredImage: pottelPoster,
+    featuredImageAltText: "pottel-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/pottel-poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -570,5 +596,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.MUFASA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.MUFASA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.MUFASA.ogImageURL}`,
+  },
+  {
+    id: 9,
+    url: `${blogPostURLS.POTTEL_RELATIVE}`,
+    title: `${SEO_OBJ.POTTEL.title}`,
+    description: `${SEO_OBJ.POTTEL.description}`,
+    lastUpdateTime: `${SEO_OBJ.POTTEL.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.POTTEL.publishedTime}`,
+    tags: SEO_OBJ.POTTEL.tags!,
+    featuredImage: SEO_OBJ.POTTEL.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.POTTEL.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.POTTEL.ogImageURL}`,
   },
 ];
