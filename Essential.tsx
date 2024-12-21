@@ -10,6 +10,7 @@ import jigraPoster from "./public/jigra-poster-2024.jpg";
 import mechanicRockyPoster from "./public/mechanic-rocky-poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 import pottelPoster from "./public/pottel-poster.jpg";
+import leelaVinodhamPoster from "./public/leela-vinodham-poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -104,6 +105,9 @@ interface Blog_Post_URL_Props {
 
   POTTEL_ABSOLUTE: string;
   POTTEL_RELATIVE: string;
+
+  LEELA_VINODHAM_ABSOLUTE: string;
+  LEELA_VINODHAM_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -154,6 +158,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   POTTEL_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pottel`,
   POTTEL_RELATIVE: "/pottel",
+
+  LEELA_VINODHAM_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/leela-vinodham`,
+  LEELA_VINODHAM_RELATIVE: "/leela-vinodham",
 };
 
 interface blogPostsObjProps {
@@ -474,6 +481,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "pottel-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/pottel-poster.jpg`,
   },
+
+  LEELA_VINODHAM: {
+    absoluteURL: blogPostURLS.LEELA_VINODHAM_ABSOLUTE,
+    relativeURL: blogPostURLS.LEELA_VINODHAM_RELATIVE,
+    title: "Pottel Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released Leela Vinodham Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-21T16:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Leela Vinodham", href: `${blogPostURLS.LEELA_VINODHAM_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Leela Vinodham iBOMMA", href: `${blogPostURLS.LEELA_VINODHAM_RELATIVE}` },
+      { tag: "Leela Vinodham", href: `${blogPostURLS.LEELA_VINODHAM_RELATIVE}` },
+    ],
+    featuredImage: leelaVinodhamPoster,
+    featuredImageAltText: "leela-vinodham-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/leela-vinodham-poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -608,5 +634,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.POTTEL.featuredImage,
     featuredImageAltText: `${SEO_OBJ.POTTEL.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.POTTEL.ogImageURL}`,
+  },
+  {
+    id: 10,
+    url: `${blogPostURLS.LEELA_VINODHAM_RELATIVE}`,
+    title: `${SEO_OBJ.LEELA_VINODHAM.title}`,
+    description: `${SEO_OBJ.LEELA_VINODHAM.description}`,
+    lastUpdateTime: `${SEO_OBJ.LEELA_VINODHAM.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.LEELA_VINODHAM.publishedTime}`,
+    tags: SEO_OBJ.LEELA_VINODHAM.tags!,
+    featuredImage: SEO_OBJ.LEELA_VINODHAM.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.LEELA_VINODHAM.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.LEELA_VINODHAM.ogImageURL}`,
   },
 ];
