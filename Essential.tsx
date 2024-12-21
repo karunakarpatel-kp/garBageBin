@@ -7,6 +7,7 @@ import kanguvaPoster from "./public/Kanguva_poster.jpg";
 import KAPoster from "./public/KA_Telugu_film_poster.jpg";
 import harikathaPoster from "./public/HariKatha_poster.jpg";
 import jigraPoster from "./public/jigra-poster-2024.jpg";
+import mechanicRockyPoster from "./public/mechanic-rocky-poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -92,6 +93,9 @@ interface Blog_Post_URL_Props {
 
   JIGRA_ABSOLUTE: string;
   JIGRA_RELATIVE: string;
+
+  MECHANIC_ROCKY_ABSOLUTE: string;
+  MECHANIC_ROCKY_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -133,6 +137,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   JIGRA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Jigra`,
   JIGRA_RELATIVE: "/Jigra",
+
+  MECHANIC_ROCKY_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mechanic_Rocky`,
+  MECHANIC_ROCKY_RELATIVE: "/Mechanic_Rocky",
 };
 
 interface blogPostsObjProps {
@@ -396,6 +403,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "Jigra-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/jigra-poster-2024.jpg'`,
   },
+
+  MECHANIC_ROCKY: {
+    absoluteURL: blogPostURLS.MECHANIC_ROCKY_ABSOLUTE,
+    relativeURL: blogPostURLS.MECHANIC_ROCKY_RELATIVE,
+    title: "Mechanic Rocky Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released Mechanic Rocky Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-21T07:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Mechanic Rocky", href: `${blogPostURLS.MECHANIC_ROCKY_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Mechanic Rocky iBOMMA", href: `${blogPostURLS.MECHANIC_ROCKY_RELATIVE}` },
+      { tag: "Mechanic Rocky review", href: `${blogPostURLS.MECHANIC_ROCKY_RELATIVE}` },
+    ],
+    featuredImage: mechanicRockyPoster,
+    featuredImageAltText: "Mechanic-rocky-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mechanic-rocky-poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -494,5 +520,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.JIGRA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.JIGRA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.JIGRA.ogImageURL}`,
+  },
+  {
+    id: 8,
+    url: `${blogPostURLS.MECHANIC_ROCKY_RELATIVE}`,
+    title: `${SEO_OBJ.MECHANIC_ROCKY.title}`,
+    description: `${SEO_OBJ.MECHANIC_ROCKY.description}`,
+    lastUpdateTime: `${SEO_OBJ.MECHANIC_ROCKY.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.MECHANIC_ROCKY.publishedTime}`,
+    tags: SEO_OBJ.MECHANIC_ROCKY.tags!,
+    featuredImage: SEO_OBJ.MECHANIC_ROCKY.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.MECHANIC_ROCKY.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.MECHANIC_ROCKY.ogImageURL}`,
   },
 ];
