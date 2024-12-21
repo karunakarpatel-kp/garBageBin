@@ -8,6 +8,7 @@ import KAPoster from "./public/KA_Telugu_film_poster.jpg";
 import harikathaPoster from "./public/HariKatha_poster.jpg";
 import jigraPoster from "./public/jigra-poster-2024.jpg";
 import mechanicRockyPoster from "./public/mechanic-rocky-poster.jpg";
+import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -96,6 +97,9 @@ interface Blog_Post_URL_Props {
 
   MECHANIC_ROCKY_ABSOLUTE: string;
   MECHANIC_ROCKY_RELATIVE: string;
+
+  MUFASA_ABSOLUTE: string;
+  MUFASA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -140,6 +144,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   MECHANIC_ROCKY_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mechanic_Rocky`,
   MECHANIC_ROCKY_RELATIVE: "/Mechanic_Rocky",
+
+  MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mufasa-The-Lion-King`,
+  MUFASA_RELATIVE: "/Mufasa-The-Lion-King",
 };
 
 interface blogPostsObjProps {
@@ -422,6 +429,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "Mechanic-rocky-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mechanic-rocky-poster.jpg`,
   },
+
+  MUFASA: {
+    absoluteURL: blogPostURLS.MUFASA_ABSOLUTE,
+    relativeURL: blogPostURLS.MUFASA_RELATIVE,
+    title: "Mufasa-The Lion King Telugu Movie - iBOMMA.",
+    description:
+      "iBOMMA, The new movie Mufasa: The Lion King has been released in theaters today. It's a story about Mufasa before The Lion King movie we know. Fans are excited to see how it compares to the original!",
+    publishedTime: "2024-12-21T07:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Mufasa, The Lion King", href: `${blogPostURLS.MUFASA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Mufasa The Lion King iBOMMA", href: `${blogPostURLS.MUFASA_RELATIVE}` },
+      { tag: "Mufasa The Lion King", href: `${blogPostURLS.MECHANIC_ROCKY_RELATIVE}` },
+    ],
+    featuredImage: mufasaPoster,
+    featuredImageAltText: "Mufasa-The-Lion-King-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-telugu-poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -532,5 +558,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.MECHANIC_ROCKY.featuredImage,
     featuredImageAltText: `${SEO_OBJ.MECHANIC_ROCKY.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.MECHANIC_ROCKY.ogImageURL}`,
+  },
+  {
+    id: 9,
+    url: `${blogPostURLS.MUFASA_RELATIVE}`,
+    title: `${SEO_OBJ.MUFASA.title}`,
+    description: `${SEO_OBJ.MUFASA.description}`,
+    lastUpdateTime: `${SEO_OBJ.MUFASA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.MUFASA.publishedTime}`,
+    tags: SEO_OBJ.MUFASA.tags!,
+    featuredImage: SEO_OBJ.MUFASA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.MUFASA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.MUFASA.ogImageURL}`,
   },
 ];
