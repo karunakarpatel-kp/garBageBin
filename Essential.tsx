@@ -11,6 +11,7 @@ import mechanicRockyPoster from "./public/mechanic-rocky-poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 import pottelPoster from "./public/pottel-poster.jpg";
 import leelaVinodhamPoster from "./public/leela-vinodham-poster.jpg";
+import zebraPoster from "./public/zebra-poster.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -108,6 +109,9 @@ interface Blog_Post_URL_Props {
 
   LEELA_VINODHAM_ABSOLUTE: string;
   LEELA_VINODHAM_RELATIVE: string;
+
+  ZEBRA_ABSOLUTE: string;
+  ZEBRA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -161,6 +165,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   LEELA_VINODHAM_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/leela-vinodham`,
   LEELA_VINODHAM_RELATIVE: "/leela-vinodham",
+
+  ZEBRA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/zebra-telugu-movie`,
+  ZEBRA_RELATIVE: "/zebra-telugu-movie",
 };
 
 interface blogPostsObjProps {
@@ -500,6 +507,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "leela-vinodham-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/leela-vinodham-poster.jpg`,
   },
+
+  ZEBRA: {
+    absoluteURL: blogPostURLS.ZEBRA_ABSOLUTE,
+    relativeURL: blogPostURLS.ZEBRA_RELATIVE,
+    title: "Zebra Telugu Moive - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released Zebra Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-21T16:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Zebra", href: `${blogPostURLS.ZEBRA_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Zebra iBOMMA", href: `${blogPostURLS.ZEBRA_RELATIVE}` },
+      { tag: "Zebra", href: `${blogPostURLS.ZEBRA_RELATIVE}` },
+    ],
+    featuredImage: zebraPoster,
+    featuredImageAltText: "zebra-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/zebra-poster.png`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -646,5 +672,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.LEELA_VINODHAM.featuredImage,
     featuredImageAltText: `${SEO_OBJ.LEELA_VINODHAM.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.LEELA_VINODHAM.ogImageURL}`,
+  },
+  {
+    id: 11,
+    url: `${blogPostURLS.ZEBRA_RELATIVE}`,
+    title: `${SEO_OBJ.ZEBRA.title}`,
+    description: `${SEO_OBJ.ZEBRA.description}`,
+    lastUpdateTime: `${SEO_OBJ.ZEBRA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.ZEBRA.publishedTime}`,
+    tags: SEO_OBJ.ZEBRA.tags!,
+    featuredImage: SEO_OBJ.ZEBRA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.ZEBRA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.ZEBRA.ogImageURL}`,
   },
 ];
