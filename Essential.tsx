@@ -12,6 +12,7 @@ import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 import pottelPoster from "./public/pottel-poster.jpg";
 import leelaVinodhamPoster from "./public/leela-vinodham-poster.jpg";
 import zebraPoster from "./public/zebra-poster.png";
+import sirPoster from "./public/Sir_(2024_film)_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -112,6 +113,9 @@ interface Blog_Post_URL_Props {
 
   ZEBRA_ABSOLUTE: string;
   ZEBRA_RELATIVE: string;
+
+  SIR_ABSOLUTE: string;
+  SIR_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -168,6 +172,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   ZEBRA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/zebra-telugu-movie`,
   ZEBRA_RELATIVE: "/zebra-telugu-movie",
+
+  SIR_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/sir-telugu-movie`,
+  SIR_RELATIVE: "/sir-telugu-movie",
 };
 
 interface blogPostsObjProps {
@@ -526,6 +533,24 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "zebra-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/zebra-poster.png`,
   },
+  SIR: {
+    absoluteURL: blogPostURLS.SIR_ABSOLUTE,
+    relativeURL: blogPostURLS.SIR_RELATIVE,
+    title: "SIR(2024) Telugu Moive - iBOMMA.",
+    description:
+      "iBOMMA, watch the newly released SIR 2024 Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-22T06:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "SIR", href: `${blogPostURLS.SIR_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "SIR 2024 iBOMMA", href: `${blogPostURLS.SIR_RELATIVE}` },
+      { tag: "SIR 2024", href: `${blogPostURLS.SIR_RELATIVE}` },
+    ],
+    featuredImage: sirPoster,
+    featuredImageAltText: "sir-2024-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Sir_(2024_film)_poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -684,5 +709,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.ZEBRA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.ZEBRA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.ZEBRA.ogImageURL}`,
+  },
+  {
+    id: 12,
+    url: `${blogPostURLS.SIR_RELATIVE}`,
+    title: `${SEO_OBJ.SIR.title}`,
+    description: `${SEO_OBJ.SIR.description}`,
+    lastUpdateTime: `${SEO_OBJ.SIR.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.SIR.publishedTime}`,
+    tags: SEO_OBJ.SIR.tags!,
+    featuredImage: SEO_OBJ.SIR.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.SIR.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.SIR.ogImageURL}`,
   },
 ];
