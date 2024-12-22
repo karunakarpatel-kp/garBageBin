@@ -13,6 +13,7 @@ import pottelPoster from "./public/pottel-poster.jpg";
 import leelaVinodhamPoster from "./public/leela-vinodham-poster.jpg";
 import zebraPoster from "./public/zebra-poster.png";
 import sirPoster from "./public/Sir_(2024_film)_poster.jpg";
+import bachhalaMalliPoster from "./public/bachalamalli-poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -116,6 +117,9 @@ interface Blog_Post_URL_Props {
 
   SIR_ABSOLUTE: string;
   SIR_RELATIVE: string;
+
+  BACHHALA_MALLI_ABSOLUTE: string;
+  BACHHALA_MALLI_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -175,6 +179,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   SIR_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/sir-telugu-movie`,
   SIR_RELATIVE: "/sir-telugu-movie",
+
+  BACHHALA_MALLI_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/bachhala-malli`,
+  BACHHALA_MALLI_RELATIVE: "/bachhala-malli",
 };
 
 interface blogPostsObjProps {
@@ -551,6 +558,24 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "sir-2024-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Sir_(2024_film)_poster.jpg`,
   },
+  BACHHALA_MALLI: {
+    absoluteURL: blogPostURLS.BACHHALA_MALLI_ABSOLUTE,
+    relativeURL: blogPostURLS.BACHHALA_MALLI_RELATIVE,
+    title: "Bachhala Malli Telugu Movie - iBOMMA",
+    description:
+      "iBOMMA, watch the newly released Bachhala Malli Telugu movie 2024 in iBOMMA and also check out the latest reviews and updates, watch the trailers, read reviews, or even enjoy the movie in excellent quality.",
+    publishedTime: "2024-12-22T06:37:55 IST",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "SIR", href: `${blogPostURLS.BACHHALA_MALLI_RELATIVE}` },
+      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Bachhala Malli Movie iBOMMA", href: `${blogPostURLS.BACHHALA_MALLI_RELATIVE}` },
+      { tag: "Bachhala Malli 2024 review", href: `${blogPostURLS.BACHHALA_MALLI_RELATIVE}` },
+    ],
+    featuredImage: bachhalaMalliPoster,
+    featuredImageAltText: "bachhala-malli-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/bachalamalli-poster.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -721,5 +746,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.SIR.featuredImage,
     featuredImageAltText: `${SEO_OBJ.SIR.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.SIR.ogImageURL}`,
+  },
+  {
+    id: 13,
+    url: `${blogPostURLS.BACHHALA_MALLI_RELATIVE}`,
+    title: `${SEO_OBJ.BACHHALA_MALLI.title}`,
+    description: `${SEO_OBJ.BACHHALA_MALLI.description}`,
+    lastUpdateTime: `${SEO_OBJ.BACHHALA_MALLI.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.BACHHALA_MALLI.publishedTime}`,
+    tags: SEO_OBJ.BACHHALA_MALLI.tags!,
+    featuredImage: SEO_OBJ.BACHHALA_MALLI.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.BACHHALA_MALLI.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.BACHHALA_MALLI.ogImageURL}`,
   },
 ];
