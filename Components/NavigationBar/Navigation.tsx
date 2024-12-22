@@ -29,7 +29,7 @@ const Navigation = (props: NavigationProps) => {
   };
 
   const onLogoClickHandler = () => {
-    navigate.push("/telugu-movies");
+    navigate.push("/");
   };
 
   useEffect(() => {
@@ -135,7 +135,7 @@ const Navigation = (props: NavigationProps) => {
         <ul className="list-none  text-white p-0 m-0  ">
           <li className="p-3 m-0">
             <Link
-              href="/telugu-movies"
+              href="/"
               className={`${
                 pathName === "/" ? "text-[#ffca3c]" : "text-white"
               } border-b border-dotted no-underline pb-3 flex gap-3 ml-2 mr-2 `}

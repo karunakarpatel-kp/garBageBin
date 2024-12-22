@@ -1,4 +1,4 @@
-import welcomePatelsImage from "./public/iBOMMA.jpg";
+import welcomePatelsImage from "./public/iBOMMA-Featured-Image.png";
 import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import thangalaanPoster from "./public/Thangalaan_poster.jpg";
@@ -228,7 +228,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/iBOMMA-Featured-Image.png`,
     changeFrequency: "daily",
     tags: [{ tag: "HomePage", href: "/" }],
   },
@@ -243,9 +243,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2024-12-19T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/iBOMMA-Featured-Image.png`,
     changeFrequency: "daily",
-    tags: [{ tag: "Blog", href: "/Blog" }],
+    tags: [{ tag: "Telugu Movies", href: "/telugu-movies" }],
   },
 
   POLICY_PAGE: {
@@ -258,7 +258,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/iBOMMA-Featured-Image.png`,
     changeFrequency: "daily",
     tags: [{ tag: "Privacy", href: "/privacy" }],
   },
@@ -273,7 +273,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/iBOMMA-Featured-Image.png`,
     changeFrequency: "daily",
     tags: [{ tag: "contact", href: "/contact" }],
   },
@@ -288,7 +288,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2024-12-18T15:37:55 IST",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "iBOMMA-homepage",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/iBOMMA-Featured-Image.png`,
     changeFrequency: "daily",
     tags: [{ tag: "disclaimer", href: "/disclaimer" }],
   },
