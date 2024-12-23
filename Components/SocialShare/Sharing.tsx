@@ -23,8 +23,10 @@ const Sharing = () => {
   const filteredSinglePost = blogPostsObj.filter((singleBlogPost) => singleBlogPost.url === pathName);
 
   useEffect(() => {
-    setGrabbedTitle(filteredSinglePost[0].title);
-    setGrabbedURL(process.env.HOME_PAGE_BASE_URL! + pathName);
+    if (filteredSinglePost.length > 0) {
+      setGrabbedTitle(filteredSinglePost[0].title);
+      setGrabbedURL(process.env.HOME_PAGE_BASE_URL! + pathName);
+    }
     // setGrabbedTitle("hi");
     // setGrabbedURL("/");
   }, []);
