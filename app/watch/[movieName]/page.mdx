@@ -1,0 +1,67 @@
+import { CustomMetaData } from "/Components/MetaData/CustomMetaData.tsx";
+import { SEO_OBJ } from "/Essential.tsx";
+import WatchPageVideoFrame from "/Components/VideoIntegration/WatchPageVideoFrame.tsx";
+import WatchPageTitle from "/Components/VideoIntegration/WatchPageTitle.tsx";
+import welcomePatelsImage from "../../../public/iBOMMA-Featured-Image.png";
+
+export const metadata = {
+  metadataBase: new URL(
+    typeof window !== "undefined" ? window.location.origin : process.env.HOME_PAGE_BASE_URL || "http://localhost:3000"
+  ),
+  title: "Watch Latest Movies at iBOMMA",
+  description: "iBOMMA, watch out the latest released movies and their reviews up to date.",
+  verification: {
+    google: process.env.GOOGLE_ANALYTICS_TAG,
+  },
+  // Added Google Console Tag Below
+  other: {
+    // "google-site-verification": "ltQ1SKk6_-3Ng5KFPA9PmkjStWZN9zbvCKbhjOoeapg",
+    "google-site-verification": process.env.GOOGLE_CONSOLE_TAG ,
+  },
+  keywords: ["aBOMMA", "iBOMMA", "iBOMMA MOVIES", "BAPPAM"],
+  creator: "iBOMMA",
+  openGraph: {
+   title: "Watch Latest Movies at iBOMMA",
+    description: "iBOMMA, watch out the latest released movies and their reviews up to date.",
+    type: "article",
+    publishedTime: "2024-12-25T18:37:55 IST",
+    modifiedTime: "2024-12-25T18:37:55 IST",
+    authors: ["iBOMMA"],
+    images: welcomePatelsImage,
+  },
+  robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+  },
+
+};
+
+<WatchPageTitle />
+
+Please watch out the latest released movie in here:
+
+<WatchPageVideoFrame />
+
+| Platform                                              | Description                                                                                        | Link                                              |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| **[Netflix](https://www.netflix.com/)**               | A global streaming service with a vast library of movies, TV shows, and originals.                 | [Visit Netflix](https://www.netflix.com/)         |
+| **[Amazon Prime Video](https://www.primevideo.com/)** | Provides movies, TV shows, and exclusive Amazon Originals.                                         | [Visit Prime Video](https://www.primevideo.com/)  |
+| **[Disney+ Hotstar](https://www.hotstar.com/)**       | Combines Disney's library with Indian entertainment, live sports, and regional content.            | [Visit Disney+ Hotstar](https://www.hotstar.com/) |
+| **[Hulu](https://www.hulu.com/)**                     | Offers current and past TV episodes, movies, and original series, primarily for the U.S. audience. | [Visit Hulu](https://www.hulu.com/)               |
+| **[HBO Max](https://www.hbomax.com/)**                | Features HBO content, including popular series, films, and Max Originals.                          | [Visit HBO Max](https://www.hbomax.com/)          |
+| **[Apple TV+](https://tv.apple.com/)**                | Focuses on original series, movies, and documentaries.                                             | [Visit Apple TV+](https://tv.apple.com/)          |
+| **[SonyLIV](https://www.sonyliv.com/)**               | An Indian platform offering TV shows, movies, sports, and originals.                               | [Visit SonyLIV](https://www.sonyliv.com/)         |
+| **[ZEE5](https://www.zee5.com/)**                     | Provides Indian and international content, including TV shows, movies, and originals.              | [Visit ZEE5](https://www.zee5.com/)               |
+| **[JioCinema](https://www.jiocinema.com/)**           | Offers movies, TV shows, and web series in various genres and languages.                           | [Visit JioCinema](https://www.jiocinema.com/)     |
+| **[ALTBalaji](https://www.altbalaji.com/)**           | Focuses on original Indian web series and shows across diverse genres.                             | [Visit ALTBalaji](https://www.altbalaji.com/)     |
+
+We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. Our team is here to assist you.

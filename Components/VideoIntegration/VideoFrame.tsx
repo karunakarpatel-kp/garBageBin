@@ -4,13 +4,16 @@ import React from "react";
 import videoImage from "@Public/video-player.png";
 import { usePathname } from "next/navigation";
 
-const VideoFrame = () => {
+interface videoFrameProps {
+  url: string;
+}
+
+const VideoFrame = (props: videoFrameProps) => {
+  const { url } = props;
   const pathName = usePathname();
 
   const onVideoClickHandler = () => {
-    if (pathName !== "/watch-movie") {
-      window.open("/telugu-movies", "chromewidth");
-    }
+    window.open(`watch/${url}`, "");
   };
 
   return (

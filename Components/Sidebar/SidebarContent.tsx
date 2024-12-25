@@ -4,13 +4,20 @@ import MDXImage from "Components/MDXImage";
 import { blogPostsObj } from "Essential";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const SidebarContent = () => {
+  const [watchPathName, setWatchPathName] = useState<boolean>(false);
   const presentURL = usePathname();
 
   const filteredObjWithoutPresentURL = blogPostsObj.filter((singleURL) => presentURL !== singleURL.url);
   const lastThreePublishedArticles = filteredObjWithoutPresentURL.slice(-3);
+
+  useEffect(() => {
+    if (presentURL.includes("watch")) {
+      setWatchPathName(true);
+    }
+  }, [presentURL]);
 
   return (
     <>
@@ -28,7 +35,16 @@ const SidebarContent = () => {
                         alt={singleBlogPost.featuredImageAltText}
                         extraStyling="h-fit w-full max-w-[380px] min-h-[400px]  m-auto -mb-3 "
                       />
-                      <h1 className="break-words px-5 underline font-medium !text-2xl !mb-8">{singleBlogPost.title}</h1>
+                      {/* <h1 className="break-words px-5 underline font-medium !text-2xl !mb-8">
+                          {singleBlogPost.title}
+                        </h1> */}
+                      {watchPathName ? (
+                        <div className="mt-8"></div>
+                      ) : (
+                        <h1 className="break-words px-5 underline font-medium !text-2xl !mb-8">
+                          {singleBlogPost.title}
+                        </h1>
+                      )}
                     </Link>
                   </div>
                 );

@@ -162,8 +162,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   JIGRA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Jigra`,
   JIGRA_RELATIVE: "/Jigra",
 
-  MECHANIC_ROCKY_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mechanic_Rocky`,
-  MECHANIC_ROCKY_RELATIVE: "/Mechanic_Rocky",
+  MECHANIC_ROCKY_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mechanic-Rocky`,
+  MECHANIC_ROCKY_RELATIVE: "/Mechanic-Rocky",
 
   MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/Mufasa-The-Lion-King`,
   MUFASA_RELATIVE: "/Mufasa-The-Lion-King",

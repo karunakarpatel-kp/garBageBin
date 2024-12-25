@@ -1,4 +1,5 @@
 import TypedAnimation from "Components/Animations/TypedAnimation";
+import ArticleList from "Components/RecentBlogPost/ArticleList";
 import Sharing from "Components/SocialShare/Sharing";
 import React from "react";
 
@@ -11,6 +12,7 @@ const Article = ({ incomingProps }: any) => {
           <TypedAnimation />
         </section>
         <Sharing />
+        <ArticleList />
       </article>
     </>
   );

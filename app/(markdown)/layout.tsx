@@ -6,6 +6,7 @@ import TypedAnimation from "Components/Animations/TypedAnimation";
 import RecentBlogPost from "Components/RecentBlogPost/RecentBlogPost";
 import Sidebar from "Components/Sidebar/Sidebar";
 import Article from "Components/Article/Article";
+import ArticleList from "Components/RecentBlogPost/ArticleList";
 // import Sharing from "@Components/SocialShare/Sharing";
 // import TypedAnimation from "@Components/Animations/TypedAnimation";
 
