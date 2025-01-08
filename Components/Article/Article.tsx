@@ -12,7 +12,7 @@ const Article = ({ incomingProps }: any) => {
           <TypedAnimation />
         </section>
         <Sharing />
-        <ArticleList />
+        {/* <ArticleList /> */}
       </article>
     </>
   );
