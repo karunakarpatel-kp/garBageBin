@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { IoIosLogIn, IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/iBOMMA-logo.png";
+import logo from "../../public/bappam-logo.png";
 
 interface NavigationProps {
   darkMode: boolean | null;
@@ -57,7 +57,7 @@ const Navigation = (props: NavigationProps) => {
           className="col-span-9 md:col-span-4 border-0 border-green-800 mt-1 ml-0 cursor-pointer"
           onClick={onLogoClickHandler}
         >
-          <Image src={logo} alt="iBOMMA logo" className="border-0 border-white mt-0" />
+          <Image src={logo} alt="iBOMMA logo" className="border-0 border-white mt-4" width={150} />
         </div>
         <div className="hidden md:block col-span-6 border-0 border-purple-400 m-0 p-0 ">
           <ul className="list-none flex space-x-6 text-white justify-end mt-2">

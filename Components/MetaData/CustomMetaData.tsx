@@ -28,7 +28,7 @@ export function CustomMetaData(props: any) {
       "google-site-verification": process.env.GOOGLE_CONSOLE_TAG as string,
     },
     category: filteredOBJ[0].category,
-    keywords: ["aBOMMA", "iBOMMA", "iBOMMA MOVIES", "BAPPAM"],
+    keywords: ["bappamtv", "bappam tv", "bappamtv movies hd", "bappamtv movies"],
     creator: "iBOMMA",
     openGraph: {
       title: filteredOBJ[0].title,
@@ -36,7 +36,7 @@ export function CustomMetaData(props: any) {
       type: "article",
       publishedTime: filteredOBJ[0].publishedTime,
       modifiedTime: filteredOBJ[0].lastUpdateTime,
-      authors: ["iBOMMA"],
+      authors: ["bappamtv"],
       images: [filteredOBJ[0].ogImageURL],
     },
 
