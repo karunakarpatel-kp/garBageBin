@@ -10,6 +10,7 @@ import { AppProgressBar } from "next-nprogress-bar";
 import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { useTheme } from "next-themes";
+import GoogleAdsense from "Components/Adsense/GoogleAdsense";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -61,6 +62,8 @@ const RootLayout = (props: RootLayoutProps) => {
           <Footer />
         </footer>
       </body>
+      {/* Adding Google Adsense Verification */}
+      <GoogleAdsense pId="2687924945894784" />
       {/* Adding Google Analytics Code Below */}
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_TAG!} />
     </html>
