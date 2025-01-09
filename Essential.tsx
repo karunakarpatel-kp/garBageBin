@@ -93,11 +93,11 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   PUSHPA_2_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule`,
   PUSHPA_2_RELATIVE: "/pushpa-2-the-rule",
 
-  AMARAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/amaran`,
-  AMARAN_RELATIVE: "/amaran",
+  AMARAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/amaran-telugu-movie`,
+  AMARAN_RELATIVE: "/amaran-telugu-movie",
 
-  MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-the-lion-king`,
-  MUFASA_RELATIVE: "/mufasa-the-lion-king",
+  MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-the-lion-king-telugu-movie`,
+  MUFASA_RELATIVE: "/mufasa-the-lion-king-telugu-movie",
 };
 
 interface blogPostsObjProps {
