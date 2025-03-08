@@ -90,14 +90,14 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  PUSHPA_2_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/pushpa-2-the-rule`,
-  PUSHPA_2_RELATIVE: "/pushpa-2-the-rule",
+  PUSHPA_2_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/pushpa-2-the-rule`,
+  PUSHPA_2_RELATIVE: "telugu-movies/pushpa-2-the-rule",
 
-  AMARAN_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/amaran-telugu-movie`,
-  AMARAN_RELATIVE: "/amaran-telugu-movie",
+  AMARAN_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/amaran`,
+  AMARAN_RELATIVE: "telugu-movies/amaran",
 
-  MUFASA_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-the-lion-king-telugu-movie`,
-  MUFASA_RELATIVE: "/mufasa-the-lion-king-telugu-movie",
+  MUFASA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/mufasa-the-lion-king`,
+  MUFASA_RELATIVE: "telugu-movies/mufasa-the-lion-king",
 };
 
 interface blogPostsObjProps {
@@ -215,7 +215,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.PUSHPA_2_RELATIVE,
     title: "Pushpa 2 - The Rule Telugu Movie - bappam tv.",
     description:
-      " Check the latest review about the recently released telugu movie Pushpa 2 - The Rule in bappam tv. You can watch the trailers, give reviews or even you can watch and download the movie at excellent quality.",
+      "Check the latest review about the recently released telugu movie Pushpa 2 - The Rule in bappam tv. You can watch the trailers, give reviews or even you can watch and download the movie at excellent quality.",
     publishedTime: "2025-01-08T11:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
