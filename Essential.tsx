@@ -91,13 +91,13 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
   PUSHPA_2_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/pushpa-2-the-rule`,
-  PUSHPA_2_RELATIVE: "telugu-movies/pushpa-2-the-rule",
+  PUSHPA_2_RELATIVE: "/telugu-movies/pushpa-2-the-rule",
 
   AMARAN_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/amaran`,
-  AMARAN_RELATIVE: "telugu-movies/amaran",
+  AMARAN_RELATIVE: "/telugu-movies/amaran",
 
   MUFASA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/mufasa-the-lion-king`,
-  MUFASA_RELATIVE: "telugu-movies/mufasa-the-lion-king",
+  MUFASA_RELATIVE: "/telugu-movies/mufasa-the-lion-king",
 };
 
 interface blogPostsObjProps {
