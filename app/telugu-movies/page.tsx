@@ -13,12 +13,13 @@ export default function TeluguMovies() {
     <>
       <div className="border-0 border-white text-white pt-10 bg-brandColor dark:bg-slate-900 dark:border-b dark:border-b-slate-800">
         <div className="text-white border-0 text-center py-9 mt-10">
-          <h1 className="text-white font-bold text-3xl md:text-4xl break-words">Where Quality & Clarity Matters</h1>
+          <h1 className="text-white font-bold text-3xl md:text-4xl break-words">
+            Watch and Download Telugu Movies in HD Quality.
+          </h1>
           <p className="text-white text-xl px-4 md:w-3/5 lg:w-3/5 m-auto">
-            Watch / download Telugu movies in an excellent quality at the smallest file size. Exclusively designed &
-            developed for smartphones, tablets and PCs.
+            Checkout the recent released movies and the movie reviews here at Bappam TV. You can also download and watch
+            out the newly released movies in HD Quality.
           </p>
-          <p>Beware of fake iBomma apps, sites</p>
         </div>
       </div>
 

@@ -62,7 +62,7 @@ const Navigation = (props: NavigationProps) => {
         <div className="hidden md:block col-span-6 border-0 border-purple-400 m-0 p-0 ">
           <ul className="list-none flex space-x-6 text-white justify-end mt-2">
             <li>
-              <Link href="/telugu-movies" className="text-white no-underline text-lg">
+              <Link href="/" className="text-white no-underline text-lg">
                 Home
               </Link>
             </li>

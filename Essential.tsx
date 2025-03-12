@@ -139,7 +139,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
     title: "Watch BAPPAM Telugu Movies in HD | BAPPAM TV",
     description:
-      "100% Telugu Entertainment. Watch bappam telugu movies online in excellent quality which was designed and developed for only bappam tv pro fans.",
+      "This website is all about newly released telugu hd movies at bappam. Here at bappam tv, you can watch, learn, and download recently released telugu movies in hd quality.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     featuredImage: welcomePatelsImage,
@@ -152,9 +152,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   TELUGU_MOVIES_PAGE: {
     absoluteURL: blogPostURLS.TELUGU_MOVIES_ABSOLUTE,
     relativeURL: blogPostURLS.TELUGU_MOVIES_RELATIVE,
-    title: "Watch BAPPAM Telugu Movies in HD | BAPPAM TV",
+    title: "Watch Telugu Movies in HD Quality | BAPPAM TV",
     description:
-      "100% Telugu Entertainment. Watch bappam telugu movies online in excellent quality which was designed and developed for only bappam tv pro fans.",
+      "Here at bappam tv, this page is all about downloading and watching out recently released telugu movies. You can directly checkout the recently released telugu movies in hd quality.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     featuredImage: welcomePatelsImage,
