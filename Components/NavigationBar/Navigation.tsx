@@ -57,17 +57,20 @@ const Navigation = (props: NavigationProps) => {
           className="col-span-9 md:col-span-4 border-0 border-green-800 mt-1 ml-0 cursor-pointer"
           onClick={onLogoClickHandler}
         >
-          <Image src={logo} alt="iBOMMA logo" className="border-0 border-white mt-4" width={150} />
+          <Image src={logo} alt="BAPPAM LOGO" className="border-0 border-white mt-4" width={150} />
         </div>
         <div className="hidden md:block col-span-6 border-0 border-purple-400 m-0 p-0 ">
           <ul className="list-none flex space-x-6 text-white justify-end mt-2">
             <li>
-              <Link href="/" className="text-white no-underline text-lg">
+              <Link href="/" className="text-white underline text-lg underline-offset-4 hover:underline-offset-8">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/telugu-movies" className="text-white no-underline text-lg ">
+              <Link
+                href="/telugu-movies"
+                className="text-white  text-lg underline underline-offset-4 hover:underline-offset-8 "
+              >
                 Telugu Movies
               </Link>
             </li>
@@ -122,11 +125,11 @@ const Navigation = (props: NavigationProps) => {
             : "hidden"
         }
       >
-        <div className="mt-1 ml-0 cursor-pointer p-1  mb-0 border-b border-b-slate-700  " onClick={onLogoClickHandler}>
-          <Image src={logo} alt="aBOMMA logo" className="  m-1 -mt-1 " />
+        <div className="cursor-pointer py-5 px-2  mb-0 border-b border-b-slate-700  " onClick={onLogoClickHandler}>
+          <Image src={logo} alt="BAPPAM LOGO" className="  m-1 -mt-1 " width={150} />
         </div>
 
-        <div className={openMobileMenu ? "absolute right-10 top-6 cursor-pointer border " : ""}>
+        <div className={openMobileMenu ? "absolute right-10 top-4 cursor-pointer border " : ""}>
           <IoMdClose size={26} fill="white" onClick={onCloseClickHandler} />
           {/* <button className="text-white bg-slate-500 px-9 py-1" onClick={onCloseClickHandler}> */}
           {/* Close */}
@@ -148,7 +151,7 @@ const Navigation = (props: NavigationProps) => {
             <Link
               href="/telugu-movies"
               className={`${
-                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
+                pathName === "/telugu-movies" || pathName!.includes("/telugu-movies") ? "text-[#ffca3c]" : "text-white"
               } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
               onClick={onCloseClickHandler}
             >
