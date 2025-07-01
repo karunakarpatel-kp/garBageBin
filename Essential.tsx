@@ -139,7 +139,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
     title: "Watch BAPPAM Telugu Movies in HD | BAPPAM TV",
     description:
-      "This website is all about newly released telugu hd movies at bappam. Here at bappam tv, you can watch, learn, and download recently released telugu movies in hd quality.",
+      "BAPPAM TV is all about newly released telugu hd movie reviews and the collections. Here at bappam tv, you can watch, learn, and download recently released telugu movies in hd quality.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     featuredImage: welcomePatelsImage,
@@ -154,7 +154,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.TELUGU_MOVIES_RELATIVE,
     title: "Watch Telugu Movies in HD Quality | BAPPAM TV",
     description:
-      "Here at bappam tv, this page is all about downloading and watching out recently released telugu movies. You can directly checkout the recently released telugu movies in hd quality.",
+      "Here at bappam tv telugu movies, this is all about downloading and watching out recently released telugu movies. You can directly checkout the recently released telugu movies for free of cost.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     featuredImage: welcomePatelsImage,
@@ -199,7 +199,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.DISCLAIMER_PAGE_RELATIVE,
     title: "Disclaimer | bappam tv",
     description:
-      "Welcome to bappam tv disclaimer page. In here you can find all the details of about bappam tv's Disclaimer and its policies.",
+      "Welcome to bappam tv disclaimer page. In here you can find all the details of about bappam tv's Disclaimer and its privacy policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     featuredImage: welcomePatelsImage,
@@ -215,7 +215,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.PUSHPA_2_RELATIVE,
     title: "Pushpa 2 - The Rule Telugu Movie - bappam tv.",
     description:
-      "Check the latest review about the recently released telugu movie Pushpa 2 - The Rule in bappam tv. You can watch the trailers, give reviews or even you can watch and download the movie at excellent quality.",
+      "Check the latest telugu movie Pushpa 2 - The Rule in bappam tv. You can watch the trailers, give reviews or even you can watch and download the movie at excellent hd quality.",
     publishedTime: "2025-01-08T11:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
@@ -234,12 +234,12 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.AMARAN_RELATIVE,
     title: "AMARAN Telugu Movie - bappam tv.",
     description:
-      "bappamtv, Check out the latest review about the recently released Telugu movie Amaran! This amazing film tells the story of a brave soldier, Major Mukund, and his incredible journey. You can watch the trailers, read reviews, or even enjoy the movie in excellent quality. Don't miss this inspiring tale of courage, love, and heroism!",
+      "Check the latest telugu movie Amaran! This amazing film tells the story of a brave soldier, Major Mukund, and his incredible journey. You can watch the trailers, read reviews, or even enjoy the movie in hd quality.",
     publishedTime: "2025-01-08T11:37:55 IST",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "AMARAN", href: `${blogPostURLS.AMARAN_RELATIVE}` },
-      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
       { tag: "AMARAN", href: `${blogPostURLS.AMARAN_RELATIVE}` },
       { tag: "AMARAN Review", href: `${blogPostURLS.AMARAN_RELATIVE}` },
     ],
@@ -252,13 +252,13 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.MUFASA_RELATIVE,
     title: "Mufasa-The Lion King Telugu Movie - bappam tv.",
     description:
-      "bappam tv, The new movie Mufasa: The Lion King has been released in theaters today. It's a story about Mufasa before The Lion King movie we know. Fans are excited to see how it compares to the original!",
+      "The new movie Mufasa: The Lion King has been released in theaters today. It's a story about Mufasa before The Lion King movie which you can watch here at bappam tv in hd quality.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2025-01-08T11:37:55 IST",
     tags: [
       { tag: "Mufasa, The Lion King", href: `${blogPostURLS.MUFASA_RELATIVE}` },
-      { tag: "iBOMMA", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-      { tag: "Mufasa The Lion King iBOMMA", href: `${blogPostURLS.MUFASA_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Mufasa The Lion King bappam tv", href: `${blogPostURLS.MUFASA_RELATIVE}` },
       { tag: "Mufasa The Lion King", href: `${blogPostURLS.MUFASA_RELATIVE}` },
     ],
     featuredImage: mufasaPoster,
