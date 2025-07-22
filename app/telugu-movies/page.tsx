@@ -4,8 +4,6 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import sampleImage from "../public/pushpa-2-the-rule.jpg";
-
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
 
 export default function TeluguMovies() {
@@ -18,7 +16,7 @@ export default function TeluguMovies() {
           </h1>
           <p className="text-white text-xl px-4 md:w-3/5 lg:w-3/5 m-auto">
             Checkout the recent released movies and the movie reviews here at Bappam TV. You can also download and watch
-            out the newly released movies in HD Quality.
+            out the newly released movies in HD Quality for free of cost.
           </p>
         </div>
       </div>
@@ -30,7 +28,7 @@ export default function TeluguMovies() {
               key={index}
               className=" shadow-sm md:shadow-sm mt-0 m-auto p-0 md:p-0 no-underline dark:bg-slate-900 hover:underline hover:underline-offset-4 h-full relative border-0 border-green-800 "
             >
-              <Link href={singleBlogPost.url} className="no-underline ">
+              <Link href={singleBlogPost.url} className="no-underline" title={singleBlogPost.title}>
                 <Image
                   src={singleBlogPost.featuredImage}
                   alt={singleBlogPost.featuredImageAltText}
