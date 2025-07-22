@@ -29,7 +29,7 @@ export function CustomMetaData(props: any) {
     },
     category: filteredOBJ[0].category,
     keywords: ["bappamtv", "bappam tv", "bappamtv movies hd", "bappamtv movies"],
-    creator: "iBOMMA",
+    creator: "bappamtv",
     openGraph: {
       title: filteredOBJ[0].title,
       description: filteredOBJ[0].description,

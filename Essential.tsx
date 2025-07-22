@@ -2,6 +2,7 @@ import welcomePatelsImage from "./public/bappam-welcome-banner.jpg";
 import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
+import kuberaPoster from "./public/kubera-poster.jpeg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -72,6 +73,9 @@ interface Blog_Post_URL_Props {
 
   MUFASA_ABSOLUTE: string;
   MUFASA_RELATIVE: string;
+
+  KUBERA_ABSOLUTE: string;
+  KUBERA_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -98,6 +102,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   MUFASA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/mufasa-the-lion-king`,
   MUFASA_RELATIVE: "/telugu-movies/mufasa-the-lion-king",
+
+  KUBERA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/kubera`,
+  KUBERA_RELATIVE: "/telugu-movies/kubera",
 };
 
 interface blogPostsObjProps {
@@ -265,6 +272,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "Mufasa-The-Lion-King-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mufasa-telugu-poster.jpg`,
   },
+
+  KUBERA: {
+    absoluteURL: blogPostURLS.MUFASA_ABSOLUTE,
+    relativeURL: blogPostURLS.MUFASA_RELATIVE,
+    title: "Watch Kubera Telugu Movie – Honest Review, Story, and Verdict",
+    description:
+      "Watch Kubera telugu movie and read our honest review of shekar kammula’s interesting drama. Discover the plot, performance, twist and why this movie is a must-watch.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-07-22T11:00:55 IST",
+    tags: [
+      { tag: "Kubera 2025", href: `${blogPostURLS.KUBERA_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Kubera Review", href: `${blogPostURLS.KUBERA_RELATIVE}` },
+      { tag: "Kubera Movie", href: `${blogPostURLS.KUBERA_RELATIVE}` },
+    ],
+    featuredImage: kuberaPoster,
+    featuredImageAltText: "kubera-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/kubera-poster.jpeg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -303,5 +329,17 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.MUFASA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.MUFASA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.MUFASA.ogImageURL}`,
+  },
+  {
+    id: 3,
+    url: `${blogPostURLS.KUBERA_RELATIVE}`,
+    title: `${SEO_OBJ.KUBERA.title}`,
+    description: `${SEO_OBJ.KUBERA.description}`,
+    lastUpdateTime: `${SEO_OBJ.KUBERA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.KUBERA.publishedTime}`,
+    tags: SEO_OBJ.KUBERA.tags!,
+    featuredImage: SEO_OBJ.KUBERA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.KUBERA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.KUBERA.ogImageURL}`,
   },
 ];
