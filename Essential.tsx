@@ -3,6 +3,7 @@ import pushpa2TheRule from "./public/pushpa-2-the-rule.jpg";
 import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 import kuberaPoster from "./public/kubera-poster.jpeg";
+import bhkPoster from "./public/3BHK_poster.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -76,6 +77,9 @@ interface Blog_Post_URL_Props {
 
   KUBERA_ABSOLUTE: string;
   KUBERA_RELATIVE: string;
+
+  BHK_ABSOLUTE: string;
+  BHK_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -105,6 +109,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   KUBERA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/kubera`,
   KUBERA_RELATIVE: "/telugu-movies/kubera",
+
+  BHK_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/3BHK`,
+  BHK_RELATIVE: "/telugu-movies/3BHK",
 };
 
 interface blogPostsObjProps {
@@ -274,9 +281,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   },
 
   KUBERA: {
-    absoluteURL: blogPostURLS.MUFASA_ABSOLUTE,
-    relativeURL: blogPostURLS.MUFASA_RELATIVE,
-    title: "Watch Kubera Telugu Movie – Honest Review, Story, and Verdict",
+    absoluteURL: blogPostURLS.KUBERA_ABSOLUTE,
+    relativeURL: blogPostURLS.KUBERA_RELATIVE,
+    title: "Watch Kubera Telugu Movie - Honest Review, Story, and Verdict",
     description:
       "Watch Kubera telugu movie and read our honest review of shekar kammula’s interesting drama. Discover the plot, performance, twist and why this movie is a must-watch.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
@@ -290,6 +297,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: kuberaPoster,
     featuredImageAltText: "kubera-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/kubera-poster.jpeg`,
+  },
+
+  BHK: {
+    absoluteURL: blogPostURLS.BHK_ABSOLUTE,
+    relativeURL: blogPostURLS.BHK_RELATIVE,
+    title: "Watch 3BHK Telugu Movie  - Review, story and conclusion.",
+    description:
+      "Watch 3BHK telugu movie online and read our honest review, summary and plot in this family drama.  Find out the twist, emotional drama, middle class family relations and why this is a must watch movie.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-07-22T11:00:55 IST",
+    tags: [
+      { tag: "3BHK 2025", href: `${blogPostURLS.BHK_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "3BHK Review", href: `${blogPostURLS.BHK_RELATIVE}` },
+      { tag: "3BHK Movie", href: `${blogPostURLS.BHK_RELATIVE}` },
+    ],
+    featuredImage: bhkPoster,
+    featuredImageAltText: "3bhk-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/3BHK_poster.jpg`,
   },
 };
 
@@ -341,5 +367,18 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.KUBERA.featuredImage,
     featuredImageAltText: `${SEO_OBJ.KUBERA.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.KUBERA.ogImageURL}`,
+  },
+
+  {
+    id: 4,
+    url: `${blogPostURLS.BHK_RELATIVE}`,
+    title: `${SEO_OBJ.BHK.title}`,
+    description: `${SEO_OBJ.BHK.description}`,
+    lastUpdateTime: `${SEO_OBJ.BHK.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.BHK.publishedTime}`,
+    tags: SEO_OBJ.BHK.tags!,
+    featuredImage: SEO_OBJ.BHK.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.BHK.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.BHK.ogImageURL}`,
   },
 ];

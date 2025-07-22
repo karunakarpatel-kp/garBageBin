@@ -13,6 +13,7 @@ export function CustomMetaData(props: any) {
   const filteredOBJ = SEO_OBJ_VALUES.filter((singleOBJ) => {
     return singleOBJ.absoluteURL === presentURL;
   });
+
   // console.log({ filteredOBJ, filteredURL });
 
   const metaDataOBJ: Metadata = {
