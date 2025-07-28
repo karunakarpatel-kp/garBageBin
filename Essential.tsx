@@ -4,6 +4,9 @@ import amaranPoster from "./public/Amaran_2024_poster.jpg";
 import mufasaPoster from "./public/mufasa-telugu-poster.jpg";
 import kuberaPoster from "./public/kubera-poster.jpeg";
 import bhkPoster from "./public/3BHK_poster.jpg";
+import uppuPoster from "./public/Uppu-Kappurambu-poster.jpg";
+import kannappaPoster from "@Public/kannappa-poster.jpeg";
+import airPoster from "@Public/AIR-telugu-webseries.jpg";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -80,6 +83,15 @@ interface Blog_Post_URL_Props {
 
   BHK_ABSOLUTE: string;
   BHK_RELATIVE: string;
+
+  UPPU_KAPPURAMBU_ABSOLUTE: string;
+  UPPU_KAPPURAMBU_RELATIVE: string;
+
+  KANNAPPA_ABSOLUTE: string;
+  KANNAPPA_RELATIVE: string;
+
+  AIR_ABSOLUTE: string;
+  AIR_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -112,6 +124,15 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   BHK_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/3BHK`,
   BHK_RELATIVE: "/telugu-movies/3BHK",
+
+  UPPU_KAPPURAMBU_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/uppu-kappurambu`,
+  UPPU_KAPPURAMBU_RELATIVE: "/telugu-movies/uppu-kappurambu",
+
+  KANNAPPA_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/kannappa`,
+  KANNAPPA_RELATIVE: "/telugu-movies/kannappa",
+
+  AIR_ABSOLUTE: `${BASE_URLS.TELUGU_MOVIES_PAGE_BASE_URL}/AIR`,
+  AIR_RELATIVE: "/telugu-movies/AIR",
 };
 
 interface blogPostsObjProps {
@@ -317,6 +338,63 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "3bhk-poster",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/3BHK_poster.jpg`,
   },
+
+  UPPU_KAPPURAMBU: {
+    absoluteURL: blogPostURLS.UPPU_KAPPURAMBU_ABSOLUTE,
+    relativeURL: blogPostURLS.UPPU_KAPPURAMBU_RELATIVE,
+    title: " Watch Uppu Kappurambu Movie - Review, Rating & Conclusion.",
+    description:
+      "Watch out latest released Uppu kappurambu telugu movie in hd quality and read our honest reviews, audience comments, ratings and reviews. Check out the plot, twists and how this drama had made an interesting sting in olden village culture.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-07-28T11:00:55 IST",
+    tags: [
+      { tag: "UPPU Kappurambu", href: `${blogPostURLS.UPPU_KAPPURAMBU_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "uppu kappurambu Review", href: `${blogPostURLS.UPPU_KAPPURAMBU_RELATIVE}` },
+      { tag: "uppu kappurambu Movie", href: `${blogPostURLS.UPPU_KAPPURAMBU_RELATIVE}` },
+    ],
+    featuredImage: uppuPoster,
+    featuredImageAltText: "uppu-kappurambu-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Uppu-Kappurambu-poster.jpg`,
+  },
+
+  KANNAPPA: {
+    absoluteURL: blogPostURLS.KANNAPPA_ABSOLUTE,
+    relativeURL: blogPostURLS.KANNAPPA_RELATIVE,
+    title: "Watch Kannappa Telugu Movie - Review, Rating & Final Verdict.",
+    description:
+      "Watch kannappa telugu movie in hd quality for free and read my personal thoughts, reviews and ratings. Check out the plot, twists and the star cast performances and why this movie must be added into the watchlist of yours.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-07-28T11:00:55 IST",
+    tags: [
+      { tag: "Kannappa", href: `${blogPostURLS.KANNAPPA_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Kannappa Review", href: `${blogPostURLS.KANNAPPA_RELATIVE}` },
+      { tag: "Kannappa Movie", href: `${blogPostURLS.KANNAPPA_RELATIVE}` },
+    ],
+    featuredImage: kannappaPoster,
+    featuredImageAltText: "kannappa-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/kannappa-poster.jpeg`,
+  },
+
+  AIR: {
+    absoluteURL: blogPostURLS.AIR_ABSOLUTE,
+    relativeURL: blogPostURLS.AIR_RELATIVE,
+    title: "Watch AIR Telugu Movie Series - My Review and Ratings.",
+    description:
+      "Watch AIR telugu movie series which was released on ETV win ott platform in hd quality and streaming in different languages. Check my honest review, cast list, ratings and the audience tagging on social media and why AIR is a must watch for teenagers.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-07-28T11:00:55 IST",
+    tags: [
+      { tag: "AIR", href: `${blogPostURLS.AIR_RELATIVE}` },
+      { tag: "bappam tv", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "AIR Review", href: `${blogPostURLS.AIR_RELATIVE}` },
+      { tag: "AIR Movie", href: `${blogPostURLS.AIR_RELATIVE}` },
+    ],
+    featuredImage: airPoster,
+    featuredImageAltText: "AIR-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/AIR-telugu-webseries.jpg`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -380,5 +458,41 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.BHK.featuredImage,
     featuredImageAltText: `${SEO_OBJ.BHK.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.BHK.ogImageURL}`,
+  },
+  {
+    id: 5,
+    url: `${blogPostURLS.UPPU_KAPPURAMBU_RELATIVE}`,
+    title: `${SEO_OBJ.UPPU_KAPPURAMBU.title}`,
+    description: `${SEO_OBJ.UPPU_KAPPURAMBU.description}`,
+    lastUpdateTime: `${SEO_OBJ.UPPU_KAPPURAMBU.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.UPPU_KAPPURAMBU.publishedTime}`,
+    tags: SEO_OBJ.UPPU_KAPPURAMBU.tags!,
+    featuredImage: SEO_OBJ.UPPU_KAPPURAMBU.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.UPPU_KAPPURAMBU.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.UPPU_KAPPURAMBU.ogImageURL}`,
+  },
+  {
+    id: 6,
+    url: `${blogPostURLS.KANNAPPA_RELATIVE}`,
+    title: `${SEO_OBJ.KANNAPPA.title}`,
+    description: `${SEO_OBJ.KANNAPPA.description}`,
+    lastUpdateTime: `${SEO_OBJ.KANNAPPA.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.KANNAPPA.publishedTime}`,
+    tags: SEO_OBJ.KANNAPPA.tags!,
+    featuredImage: SEO_OBJ.KANNAPPA.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.KANNAPPA.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.KANNAPPA.ogImageURL}`,
+  },
+  {
+    id: 7,
+    url: `${blogPostURLS.AIR_RELATIVE}`,
+    title: `${SEO_OBJ.AIR.title}`,
+    description: `${SEO_OBJ.AIR.description}`,
+    lastUpdateTime: `${SEO_OBJ.AIR.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.AIR.publishedTime}`,
+    tags: SEO_OBJ.AIR.tags!,
+    featuredImage: SEO_OBJ.AIR.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.AIR.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.AIR.ogImageURL}`,
   },
 ];
